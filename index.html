@@ -4,474 +4,1561 @@
 <meta charset="utf-8">
 <title>Programme Primo-Partenaires — Medical Place</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Medical Place, le premier réseau social exclusivement dédié aux professionnels de santé français authentifiés RPPS. Devenez l'un des 60 Primo-Partenaires : tarif gelé à vie, gratuité d'amorçage jusqu'au 31/12/2026, résiliation libre.">
-<link rel="canonical" href="https://partenaires.wilink.io/">
-<meta name="theme-color" content="#0EA5E9">
+<meta name="description" content="Devenez Primo-Partenaire de Medical Place, le réseau social professionnel de la santé en France. Opportunité fondatrice limitée à 60 partenaires — offre d'été jusqu'au 21 septembre 2026.">
+<link rel="canonical" href="https://partenaires.medical-place.com/">
+<meta name="theme-color" content="#0d9488">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 32'%3E%3Cpath d='M5 28 V14 C5 9.5 8 6.5 12 6.5 C16 6.5 19 9.5 19 14 V28 M19 14 C19 9.5 22 6.5 26 6.5 C30 6.5 33 9.5 33 14 V28' stroke='%230EA5E9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3Ccircle cx='6.5' cy='3.2' r='1.9' fill='%230EA5E9'/%3E%3Ccircle cx='26' cy='29.5' r='1.9' fill='%230EA5E9'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Medical Place">
-<meta property="og:url" content="https://partenaires.wilink.io/">
+<meta property="og:url" content="https://partenaires.medical-place.com/">
 <meta property="og:title" content="Programme Primo-Partenaires — Medical Place">
-<meta property="og:description" content="Atteignez 1,5 million de professionnels de santé authentifiés RPPS. 60 places de partenaires fondateurs : tarif gelé à vie, gratuité jusqu'au 31/12/2026, résiliation libre.">
-<meta name="twitter:card" content="summary">
+<meta property="og:description" content="Une opportunité fondatrice, limitée à 60 partenaires sur tout le territoire. Offre d'été jusqu'au 21 septembre 2026.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Programme Primo-Partenaires — Medical Place">
+<meta name="twitter:description" content="Le réseau social professionnel de la santé en France, ouvert aux 1,5 million de professionnels authentifiés RPPS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-@font-face{font-family:"Poppins";src:url("fonts/Poppins-Light.ttf") format("truetype");font-weight:300;font-display:swap;}
-@font-face{font-family:"Poppins";src:url("fonts/Poppins-Regular.ttf") format("truetype");font-weight:400;font-display:swap;}
-@font-face{font-family:"Poppins";src:url("fonts/Poppins-Medium.ttf") format("truetype");font-weight:500;font-display:swap;}
-@font-face{font-family:"Poppins";src:url("fonts/Poppins-SemiBold.ttf") format("truetype");font-weight:600;font-display:swap;}
-@font-face{font-family:"Poppins";src:url("fonts/Poppins-Bold.ttf") format("truetype");font-weight:700;font-display:swap;}
-*{box-sizing:border-box;}
+:root{
+  --font:"Poppins",ui-sans-serif,system-ui,sans-serif;
+  --primary:#0ea5e9;--primary-hover:#38bdf8;--primary-muted:#e0f5ff;--primary-deep:#0369a1;
+  --teal:#0d9488;--teal-hover:#0f766e;--teal-muted:rgba(13,148,136,.10);--teal-deep:#115e59;
+  --amber:#d97706;--amber-muted:#fef3c7;
+  --rose:#be185d;--rose-muted:#fce7f3;
+  --green:#15803d;--green-muted:#dcfce7;
+  --violet:#7c3aed;--violet-muted:#ede9fe;
+
+  --page-bg:linear-gradient(to bottom right,#f8fafc,#e0f2fe,#dbeafe);
+  --card-bg:#ffffff;--card-border:#e2e8f0;
+  --t1:#18181b;--t2:#52525b;--t3:#71717a;--t4:#a1a1aa;
+  --b1:#e2e8f0;--b2:#cbd5e1;
+  --search-bg:#f1f5f9;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-html,body{margin:0;padding:0;}
-body{font-family:"Poppins",ui-sans-serif,system-ui,sans-serif;color:#18181b;background:#f8fafc;-webkit-font-smoothing:antialiased;}
-a{color:#0284c7;text-decoration:none;}
-a:hover{color:#0ea5e9;}
-.navbar{-webkit-backdrop-filter:blur(10px);}
-.btn-grad:hover{filter:brightness(1.08);}
-.btn-ghost:hover{border-color:#a1a1aa !important;}
-.cta-white:hover{filter:brightness(.96);}
-.cta-glass:hover{background:rgba(255,255,255,.18) !important;}
-.faq-q[aria-expanded="true"] .faq-chev{transform:rotate(180deg);}
-@media (max-width:940px){
-  .nav-links{display:none !important;}
-}
-@media (max-width:720px){
-  .hero-pad{padding:52px 20px 44px !important;}
-  .hero-h1{font-size:36px !important;}
-  .sec{padding-left:20px !important;padding-right:20px !important;padding-top:56px !important;}
-  .sec-h2{font-size:27px !important;}
-  .cta-box{padding:44px 22px !important;}
-  .cta-h2{font-size:29px !important;}
-}
-@media (max-width:640px){
-  .stat-b{border-left:none !important;}
-}
-@media (max-width:480px){
-  .hero-h1{font-size:31px !important;}
-  .nav-cta{padding:0 13px !important;font-size:12.5px !important;}
-  .nav-pill{display:none !important;}
+body{font-family:var(--font);background:var(--page-bg);color:var(--t1);padding:24px 16px;min-height:100vh;font-size:14px;line-height:1.6;}
+.doc{max-width:920px;margin:0 auto;background:var(--card-bg);border-radius:24px;box-shadow:0 12px 40px rgba(15,23,42,.10);overflow:hidden;}
+
+/* ============== VIEW SYSTEM ============== */
+.view{display:none;}
+.view.active{display:block;}
+
+/* ============== COVER ============== */
+.cover{padding:56px 48px 48px;background:linear-gradient(135deg,#0d9488 0%,#0ea5e9 60%,#0369a1 100%);color:#fff;position:relative;overflow:hidden;}
+.cover::before{content:"";position:absolute;inset:0;background:radial-gradient(120% 80% at 100% 0%,rgba(255,255,255,.18),transparent 60%);}
+.cover::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 24px 24px,rgba(255,255,255,.10) 1.4px,transparent 1.6px);background-size:36px 36px;opacity:.45;}
+.cover-inner{position:relative;}
+.cover-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;letter-spacing:-.02em;margin-bottom:28px;color:#fff;opacity:.95;}
+.cover-eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.18);padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.3);margin-bottom:18px;}
+.cover-title{font-size:42px;font-weight:800;letter-spacing:-.035em;line-height:1.05;color:#fff;}
+.cover-title em{font-style:normal;background:linear-gradient(120deg,#fef3c7,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.cover-sub{font-size:16px;color:rgba(255,255,255,.94);margin-top:18px;max-width:680px;line-height:1.5;font-weight:400;}
+.cover-deadline{display:inline-flex;align-items:flex-start;gap:10px;margin-top:24px;padding:12px 18px;background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.4);border-radius:14px;font-size:13.5px;font-weight:500;backdrop-filter:blur(8px);max-width:680px;}
+.cover-deadline svg{flex-shrink:0;margin-top:1px;}
+.cover-deadline strong{color:#fef3c7;font-weight:700;}
+
+/* ============== SECTIONS ============== */
+.body{padding:36px 48px 32px;}
+.sec{margin-bottom:40px;scroll-margin-top:20px;}
+.sec-eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);margin-bottom:6px;}
+.sec-title{font-size:24px;font-weight:700;letter-spacing:-.025em;color:var(--t1);margin-bottom:10px;line-height:1.2;}
+.sec-lead{font-size:15px;color:var(--t2);line-height:1.6;margin-bottom:16px;}
+.sec-lead strong{color:var(--t1);font-weight:700;}
+
+p{font-size:14px;color:var(--t2);line-height:1.65;margin-bottom:10px;}
+p strong{color:var(--t1);font-weight:700;}
+h4{font-size:15px;font-weight:700;color:var(--t1);margin:18px 0 8px;letter-spacing:-.01em;}
+
+/* ============== WHY MEDICAL PLACE ============== */
+.benefit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0;}
+@media(max-width:780px){.benefit-grid{grid-template-columns:1fr;}}
+.benefit{background:var(--card-bg);border:1px solid var(--b1);border-radius:14px;padding:18px;}
+.benefit-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--primary-muted);color:var(--primary);font-size:13px;font-weight:800;margin-bottom:10px;}
+.benefit-title{font-size:14px;font-weight:700;color:var(--t1);margin-bottom:6px;line-height:1.3;}
+.benefit-desc{font-size:12.5px;color:var(--t2);line-height:1.6;}
+.benefit-desc strong{color:var(--t1);font-weight:600;}
+
+/* ============== HERO OFFER ============== */
+.hero-offer{background:linear-gradient(135deg,#fbbf24 0%,#f59e0b 100%);border-radius:20px;padding:24px 28px;color:#451a03;margin:14px 0;position:relative;overflow:hidden;}
+.hero-offer::before{content:"";position:absolute;top:-20px;right:-20px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.4),transparent 70%);}
+.hero-offer-inner{position:relative;}
+.hero-offer-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(69,26,3,.12);padding:5px 11px;border-radius:999px;margin-bottom:10px;}
+.hero-offer-title{font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.2;}
+.hero-offer-sub{font-size:13.5px;margin-top:8px;line-height:1.55;color:rgba(69,26,3,.88);}
+.hero-offer-sub strong{color:#451a03;font-weight:700;}
+
+/* ============== AVANTAGES FOUNDER ============== */
+.avantages{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0;}
+@media(max-width:780px){.avantages{grid-template-columns:1fr;}}
+.av-card{background:var(--card-bg);border:1px solid var(--b1);border-radius:14px;padding:16px;display:flex;gap:12px;align-items:flex-start;}
+.av-ico{width:38px;height:38px;border-radius:11px;background:var(--primary-muted);color:var(--primary);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.av-card.v .av-ico{background:var(--violet-muted);color:var(--violet);}
+.av-card.t .av-ico{background:var(--teal-muted);color:var(--teal);}
+.av-card.a .av-ico{background:var(--amber-muted);color:var(--amber);}
+.av-card.g .av-ico{background:var(--green-muted);color:var(--green);}
+.av-card.r .av-ico{background:var(--rose-muted);color:var(--rose);}
+.av-body{flex:1;}
+.av-title{font-size:14px;font-weight:700;color:var(--t1);margin-bottom:3px;line-height:1.3;}
+.av-desc{font-size:12.5px;color:var(--t2);line-height:1.55;}
+.av-desc strong{color:var(--t1);font-weight:600;}
+
+/* ============== TARIFS OVERVIEW (CLICKABLE CARDS) ============== */
+.tarifs-family{margin:16px 0;}
+.tarifs-family-hd{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;}
+.tarifs-family-pill{font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:999px;}
+.tarifs-family-pill.a{background:var(--primary-muted);color:var(--primary);}
+.tarifs-family-pill.b{background:var(--amber-muted);color:var(--amber);}
+.tarifs-family-pill.c{background:var(--green-muted);color:var(--green);}
+.tarifs-family-name{font-size:15px;font-weight:700;color:var(--t1);}
+.tarifs-family-sub{font-size:12px;color:var(--t3);font-weight:500;}
+
+.tarifs-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+@media(max-width:780px){.tarifs-cards{grid-template-columns:1fr;}}
+
+.tarif-card{background:var(--card-bg);border:1px solid var(--b1);border-radius:14px;padding:18px 16px 14px;position:relative;cursor:pointer;transition:.15s ease;display:flex;flex-direction:column;font-family:var(--font);text-align:left;width:100%;}
+.tarif-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,23,42,.10);border-color:var(--primary);}
+.tarif-card.hl-a:hover{border-color:var(--primary);}
+.tarif-card.hl-b:hover{border-color:var(--amber);}
+.tarif-card.hl-a{border:2px solid rgba(14,165,233,.5);background:linear-gradient(180deg,#fafdff 0%,#ffffff 100%);}
+.tarif-card.hl-b{border:2px solid rgba(217,119,6,.45);background:linear-gradient(180deg,#fffbf3 0%,#ffffff 100%);}
+.tarif-flag{position:absolute;top:-11px;left:14px;font-size:9.5px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:6px;}
+.tarif-flag.a{background:var(--primary);color:#fff;}
+.tarif-flag.b{background:var(--amber);color:#fff;}
+.tarif-hd{display:flex;align-items:center;gap:6px;margin-bottom:8px;font-size:13px;font-weight:700;color:var(--t1);}
+.tarif-hd svg{color:var(--t3);flex-shrink:0;}
+.tarif-card.hl-a .tarif-hd svg{color:var(--primary);}
+.tarif-card.hl-b .tarif-hd svg{color:var(--amber);}
+.tarif-price{font-size:26px;font-weight:800;letter-spacing:-.025em;color:var(--t1);line-height:1.05;}
+.tarif-price small{font-size:12px;font-weight:500;color:var(--t3);letter-spacing:0;}
+.tarif-yearly{font-size:11.5px;color:var(--t3);margin-top:3px;}
+.tarif-deal{font-size:12px;font-weight:600;margin-top:10px;padding-top:10px;border-top:1px dashed var(--b1);color:var(--teal);}
+.tarif-deal strong{font-weight:700;}
+.tarif-target{font-size:11.5px;color:var(--t3);margin-top:8px;font-style:italic;line-height:1.4;}
+.tarif-cta{font-size:11.5px;font-weight:700;color:var(--primary);margin-top:12px;padding-top:10px;border-top:1px solid var(--b1);display:flex;align-items:center;justify-content:space-between;}
+.tarif-card.hl-b .tarif-cta{color:var(--amber);}
+.tarif-cta svg{transition:transform .15s;}
+.tarif-card:hover .tarif-cta svg{transform:translateX(3px);}
+
+/* Famille C card large */
+.tarif-c-card{background:linear-gradient(180deg,rgba(21,128,61,.05) 0%,rgba(21,128,61,.02) 100%);border:1.5px solid rgba(21,128,61,.22);border-radius:16px;padding:22px 24px;cursor:pointer;transition:.22s ease;display:flex;align-items:center;gap:20px;font-family:var(--font);text-align:left;width:100%;border-left:5px solid var(--green);position:relative;}
+.tarif-c-card:hover{transform:translateY(-2px);background:linear-gradient(180deg,rgba(21,128,61,.09) 0%,rgba(21,128,61,.04) 100%);border-color:var(--green);box-shadow:0 12px 32px rgba(21,128,61,.18);}
+.tarif-c-ico{width:56px;height:56px;border-radius:14px;background:var(--green-muted);color:var(--green);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 4px 12px rgba(21,128,61,.15);}
+.tarif-c-body{flex:1;}
+.tarif-c-title{font-size:17px;font-weight:800;color:var(--t1);margin-bottom:5px;letter-spacing:-.01em;}
+.tarif-c-desc{font-size:12.5px;color:var(--t2);line-height:1.5;margin-bottom:10px;}
+.tarif-c-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
+.tarif-c-tag{font-size:10.5px;font-weight:600;color:var(--green);background:var(--green-muted);border-radius:999px;padding:4px 10px;letter-spacing:.01em;}
+.tarif-c-arrow{color:var(--green);flex-shrink:0;transition:transform .22s ease;background:#fff;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(21,128,61,.15);}
+.tarif-c-card:hover .tarif-c-arrow{transform:translateX(4px);background:var(--green);color:#fff;}
+
+/* ============== EQUITY ============== */
+.equity-axes{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0;}
+@media(max-width:780px){.equity-axes{grid-template-columns:1fr;}}
+.axis{background:var(--card-bg);border:1px solid var(--b1);border-radius:14px;padding:18px;position:relative;}
+.axis-num{position:absolute;top:-12px;left:14px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff;}
+.axis-num.a1{background:var(--primary);}
+.axis-num.a2{background:var(--teal);}
+.axis-num.a3{background:var(--violet);}
+.axis-name{font-size:13px;font-weight:700;color:var(--t1);margin-top:4px;margin-bottom:8px;}
+.axis-desc{font-size:12px;color:var(--t2);line-height:1.55;}
+.axis-desc strong{color:var(--t1);font-weight:600;}
+
+/* ============== CTA FINAL ============== */
+.cta-final{margin-top:24px;padding:28px 32px;background:linear-gradient(135deg,#0369a1 0%,#0d9488 100%);border-radius:18px;color:#fff;text-align:center;}
+.cta-final-eyebrow{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:6px;}
+.cta-final-title{font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px;}
+.cta-final-sub{font-size:14px;color:rgba(255,255,255,.92);margin-bottom:16px;}
+.cta-final-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:left;}
+@media(max-width:780px){.cta-final-steps{grid-template-columns:1fr;}}
+.cta-step{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:12px 14px;backdrop-filter:blur(8px);}
+.cta-step-num{font-size:11px;font-weight:700;letter-spacing:.08em;color:#fef3c7;margin-bottom:4px;}
+.cta-step-name{font-size:13px;font-weight:700;color:#fff;margin-bottom:3px;}
+.cta-step-detail{font-size:11.5px;color:rgba(255,255,255,.85);line-height:1.45;}
+
+/* ============== DETAIL PAGES ============== */
+.detail-head{padding:24px 48px 18px;background:var(--card-bg);border-bottom:1px solid var(--b1);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px);background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.back-btn{background:transparent;border:1.5px solid var(--b1);border-radius:999px;padding:8px 16px;font-family:var(--font);font-size:12.5px;font-weight:600;color:var(--t2);cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:.15s;}
+.back-btn:hover{border-color:var(--primary);color:var(--primary);}
+.compare-link{background:transparent;border:none;font-family:var(--font);font-size:12.5px;font-weight:600;color:var(--primary);cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:8px;transition:.15s;}
+.compare-link:hover{background:var(--primary-muted);}
+
+.detail-hero{padding:36px 48px 28px;background:linear-gradient(135deg,#f0f9ff 0%,#ffffff 100%);}
+.detail-hero.a{background:linear-gradient(135deg,#e0f2fe 0%,#ffffff 100%);}
+.detail-hero.b{background:linear-gradient(135deg,#fef3c7 0%,#ffffff 100%);}
+.detail-hero.c{background:linear-gradient(135deg,#dcfce7 0%,#ffffff 100%);}
+.detail-eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--primary);margin-bottom:8px;}
+.detail-eyebrow.a{color:var(--primary);}
+.detail-eyebrow.b{color:var(--amber);}
+.detail-eyebrow.c{color:var(--green);}
+.detail-title{font-size:36px;font-weight:800;letter-spacing:-.03em;line-height:1.05;color:var(--t1);}
+.detail-tagline{font-size:15px;color:var(--t2);margin-top:10px;max-width:680px;line-height:1.5;}
+
+.detail-pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;}
+@media(max-width:780px){.detail-pricing{grid-template-columns:1fr;}}
+.detail-price-block{background:var(--card-bg);border:1px solid var(--b1);border-radius:12px;padding:14px;}
+.detail-price-block.highlight{background:linear-gradient(180deg,rgba(13,148,136,.08),rgba(13,148,136,.02));border-color:rgba(13,148,136,.3);}
+.detail-price-block.highlight2{background:linear-gradient(180deg,rgba(14,165,233,.08),rgba(14,165,233,.02));border-color:rgba(14,165,233,.3);}
+.dpb-label{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);margin-bottom:4px;}
+.detail-price-block.highlight .dpb-label{color:var(--teal);}
+.detail-price-block.highlight2 .dpb-label{color:var(--primary);}
+.dpb-price{font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--t1);line-height:1.1;}
+.dpb-price small{font-size:11px;font-weight:500;color:var(--t3);}
+.dpb-sub{font-size:11px;color:var(--t3);margin-top:2px;}
+
+.detail-body{padding:28px 48px 36px;}
+
+.detail-section{margin-bottom:28px;}
+.detail-section-title{font-size:18px;font-weight:700;letter-spacing:-.015em;color:var(--t1);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.detail-section-title svg{color:var(--primary);}
+
+.feat-list{list-style:none;padding:0;margin:10px 0;}
+.feat-list li{padding:8px 0 8px 28px;border-bottom:1px dashed var(--b1);font-size:13.5px;color:var(--t2);position:relative;line-height:1.55;}
+.feat-list li:last-child{border-bottom:none;}
+.feat-list li::before{content:"";position:absolute;left:0;top:13px;width:16px;height:16px;border-radius:5px;background:var(--teal-muted);}
+.feat-list li::after{content:"";position:absolute;left:4px;top:17px;width:8px;height:4px;border-left:1.7px solid var(--teal);border-bottom:1.7px solid var(--teal);transform:rotate(-45deg);}
+.feat-list li strong{color:var(--t1);font-weight:700;}
+
+.example-box{background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);border-radius:14px;padding:18px 20px;border-left:4px solid var(--primary);margin:14px 0;}
+.example-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px;}
+.example-body{font-size:13.5px;color:var(--t2);line-height:1.65;}
+.example-body strong{color:var(--t1);font-weight:700;}
+
+.nav-related-wrap{margin-top:32px;padding-top:24px;border-top:1px solid var(--b1);}
+.nav-related-title{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:14px;text-align:center;}
+.compare-nav-btn{width:100%;background:linear-gradient(135deg,var(--primary) 0%,var(--teal) 100%);color:#fff;border:none;border-radius:14px;padding:18px 22px;font-family:var(--font);cursor:pointer;display:flex;align-items:center;gap:16px;box-shadow:0 8px 24px rgba(14,165,233,.25);transition:.2s ease;margin-bottom:14px;text-align:left;}
+.compare-nav-btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,165,233,.35);}
+.compare-nav-btn-icon{flex-shrink:0;width:44px;height:44px;background:rgba(255,255,255,.18);border-radius:11px;display:flex;align-items:center;justify-content:center;}
+.compare-nav-btn-icon svg{color:#fff;}
+.compare-nav-btn-body{flex:1;}
+.compare-nav-btn-label{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:3px;}
+.compare-nav-btn-title{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.005em;}
+.compare-nav-btn-arrow{flex-shrink:0;font-size:20px;color:#fff;font-weight:700;transition:transform .2s ease;}
+.compare-nav-btn:hover .compare-nav-btn-arrow{transform:translateX(4px);}
+.nav-related{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:780px){.nav-related{grid-template-columns:1fr;}}
+.nav-card{background:linear-gradient(180deg,rgba(14,165,233,.04) 0%,rgba(14,165,233,.02) 100%);border:1.5px solid rgba(14,165,233,.18);border-radius:12px;padding:16px 18px;cursor:pointer;transition:.2s ease;font-family:var(--font);text-align:left;position:relative;}
+.nav-card:hover{border-color:var(--primary);background:linear-gradient(180deg,rgba(14,165,233,.08) 0%,rgba(14,165,233,.04) 100%);transform:translateY(-1px);box-shadow:0 6px 16px rgba(14,165,233,.15);}
+.nav-card-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:6px;}
+.nav-card-name{font-size:15px;font-weight:700;color:var(--t1);letter-spacing:-.005em;}
+.nav-card-arrow{font-size:12px;color:var(--primary);font-weight:700;margin-top:8px;display:inline-flex;align-items:center;gap:4px;transition:transform .2s ease;}
+.nav-card:hover .nav-card-arrow{transform:translateX(3px);}
+
+/* ============== FOOTER ============== */
+.foot{padding:16px 48px;background:var(--search-bg);border-top:1px solid var(--b1);font-size:11.5px;color:var(--t3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot strong{color:var(--t2);font-weight:700;}
+
+/* ============== UTILITY ============== */
+.inset{margin:14px 0;padding:14px 16px;border-radius:12px;background:var(--primary-muted);border:1px solid rgba(14,165,233,.2);}
+.inset-title{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:6px;}
+.inset-body{font-size:12.5px;color:var(--t2);line-height:1.6;}
+.inset-body strong{color:var(--t1);font-weight:700;}
+.inset.teal{background:var(--teal-muted);border-color:rgba(13,148,136,.2);}
+.inset.teal .inset-title{color:var(--teal);}
+.inset.violet{background:var(--violet-muted);border-color:rgba(124,58,237,.2);}
+.inset.violet .inset-title{color:var(--violet);}
+
+/* ============== COMPARE BUTTON ============== */
+.compare-btn-wrap{margin:0 0 18px;display:flex;justify-content:center;}
+.compare-btn{background:linear-gradient(135deg,var(--primary) 0%,var(--teal) 100%);color:#fff;border:none;border-radius:999px;padding:12px 24px;font-family:var(--font);font-size:13px;font-weight:700;letter-spacing:-.005em;cursor:pointer;display:inline-flex;align-items:center;gap:10px;box-shadow:0 6px 20px rgba(14,165,233,.25);transition:.18s ease;}
+.compare-btn:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(14,165,233,.35);}
+.compare-btn svg{flex-shrink:0;}
+
+/* ============== COMPARE TABLE (FICHE COMPARAISON) ============== */
+.compare-hero{padding:36px 48px 24px;background:linear-gradient(135deg,#f0f9ff 0%,#ffffff 100%);}
+.compare-hero .detail-title{font-size:32px;}
+
+.compare-table-wrap{padding:8px 48px 36px;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.compare-table{width:100%;min-width:720px;border-collapse:separate;border-spacing:0;font-size:12.5px;background:var(--card-bg);border-radius:14px;overflow:hidden;border:1px solid var(--b1);table-layout:fixed;}
+.compare-table colgroup col.col-crit{width:30%;}
+.compare-table colgroup col.col-tier{width:23.33%;}
+.compare-table thead{position:sticky;top:64px;z-index:5;}
+.compare-table thead th{background:var(--card-bg);padding:0;border-bottom:1px solid var(--b1);vertical-align:bottom;}
+.compare-th-cell{padding:14px 12px 12px;text-align:left;}
+.compare-th-cell.crit{background:var(--search-bg);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);}
+.compare-th-cell.tier{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);text-align:center;border-left:1px solid var(--b1);}
+.compare-th-cell.tier.premium{background:linear-gradient(180deg,#fef3c7 0%,#fffbf3 100%);color:var(--amber);}
+.compare-th-cell.tier .tier-name{font-size:16px;font-weight:800;color:var(--t1);text-transform:none;letter-spacing:-.01em;margin:4px 0;white-space:nowrap;}
+.compare-th-cell.tier.premium .tier-name{color:var(--amber);}
+.compare-th-cell.tier .tier-price-row{font-size:11px;font-weight:600;color:var(--t2);font-variant-numeric:tabular-nums;line-height:1.35;white-space:normal;}
+.compare-th-cell.tier .tier-price-row.founder{color:var(--teal);font-weight:700;margin-top:2px;}
+.compare-th-cell.tier .tier-flag-mini{display:inline-block;font-size:9px;font-weight:800;letter-spacing:.06em;background:var(--amber);color:#fff;padding:2px 6px;border-radius:4px;margin-bottom:6px;white-space:nowrap;}
+
+.compare-table tbody tr.category-row td{background:var(--search-bg);padding:10px 14px 8px;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);}
+
+.compare-table td{padding:11px 12px;border-bottom:1px solid var(--b1);font-size:12.5px;color:var(--t2);vertical-align:top;line-height:1.45;}
+.compare-table td.crit{font-weight:600;color:var(--t1);}
+.compare-table td.val{text-align:center;border-left:1px solid var(--b1);font-variant-numeric:tabular-nums;}
+.compare-table td.val.premium-col{background:rgba(217,119,6,.04);}
+.compare-table tr:last-child td{border-bottom:none;}
+
+.cmp-yes{color:var(--green);font-size:16px;font-weight:800;line-height:1;}
+.cmp-no{color:var(--t4);font-size:14px;font-weight:600;line-height:1;}
+.cmp-strong{color:var(--t1);font-weight:700;}
+.cmp-highlight{display:inline-block;background:var(--teal-muted);color:var(--teal);padding:2px 7px;border-radius:5px;font-size:11.5px;font-weight:700;}
+
+.compare-cta-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;}
+@media(max-width:780px){.compare-cta-row{grid-template-columns:1fr;}}
+.compare-cta-btn{background:var(--card-bg);border:1.5px solid var(--b1);border-radius:12px;padding:14px;font-family:var(--font);text-align:center;cursor:pointer;transition:.15s;}
+.compare-cta-btn:hover{border-color:var(--primary);background:var(--primary-muted);transform:translateY(-1px);}
+.compare-cta-btn.premium{border-color:rgba(217,119,6,.4);background:linear-gradient(180deg,#fffbf3 0%,#ffffff 100%);}
+.compare-cta-btn.premium:hover{border-color:var(--amber);background:#fef3c7;}
+.compare-cta-btn-label{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:4px;}
+.compare-cta-btn-name{font-size:14px;font-weight:700;color:var(--t1);margin-bottom:2px;}
+.compare-cta-btn-arrow{font-size:11.5px;color:var(--primary);font-weight:700;margin-top:4px;}
+.compare-cta-btn.premium .compare-cta-btn-arrow{color:var(--amber);}
+
+@media print{
+  body{background:#fff;padding:0;}
+  .doc{box-shadow:none;border-radius:0;max-width:none;}
+  .cover{padding:32px 36px 28px;}
+  .body{padding:24px 36px 28px;}
+  .view{display:block !important;page-break-before:always;}
+  .view:first-of-type{page-break-before:auto;}
+  .detail-head{position:static;}
+  .back-btn,.compare-link,.compare-btn-wrap,.nav-related,.nav-related-wrap{display:none;}
 }
 </style>
 </head>
 <body>
+<div class="doc">
 
-<div style="min-height:100vh;background:linear-gradient(to bottom right,#f8fafc,#eff6ff,#e0f2fe);overflow-x:hidden;">
+<!-- ================================================================ -->
+<!-- ======================== VUE PRINCIPALE ======================== -->
+<!-- ================================================================ -->
+<div class="view active" id="view-main">
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar" style="height:64px;background:rgba(255,255,255,.86);backdrop-filter:blur(10px);border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:16px;padding:0 24px;position:sticky;top:0;z-index:60;">
-  <a href="#top" style="display:flex;align-items:center;gap:10px;" aria-label="Medical Place — haut de page">
-    <!-- Lockup SVG + texte en attendant assets/logo-horizontal.png (fichier non fourni à ce jour) -->
-    <span style="display:inline-flex;align-items:center;gap:8px;color:#0EA5E9;">
-      <svg width="30" height="24" viewBox="0 0 40 32" fill="none" aria-hidden="true"><path d="M5 28 V14 C5 9.5 8 6.5 12 6.5 C16 6.5 19 9.5 19 14 V28 M19 14 C19 9.5 22 6.5 26 6.5 C30 6.5 33 9.5 33 14 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="3.2" r="1.9" fill="currentColor"/><circle cx="26" cy="29.5" r="1.9" fill="currentColor"/></svg>
-      <span style="font-size:17px;font-weight:700;letter-spacing:-.015em;color:#0f172a;white-space:nowrap;">Medical Place</span>
-    </span>
-    <span class="nav-pill" style="display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;background:rgba(13,148,136,.12);border:1px solid rgba(13,148,136,.30);color:#0f766e;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;">Partenaires</span>
-  </a>
-  <div style="flex:1;"></div>
-  <div class="nav-links" style="display:flex;align-items:center;gap:26px;">
-    <a href="#benefices" style="color:#52525b;font-size:13.5px;font-weight:500;">Pourquoi Medical Place</a>
-    <a href="#avantages" style="color:#52525b;font-size:13.5px;font-weight:500;">Avantages</a>
-    <a href="#tarifs" style="color:#52525b;font-size:13.5px;font-weight:500;">Tarifs</a>
-    <a href="#etapes" style="color:#52525b;font-size:13.5px;font-weight:500;">Étapes</a>
-    <a href="#faq" style="color:#52525b;font-size:13.5px;font-weight:500;">FAQ</a>
+  <!-- COVER -->
+  <div class="cover">
+    <div class="cover-inner">
+      <div class="cover-brand">
+        <svg width="26" height="21" viewBox="0 0 40 32" fill="none" aria-hidden="true"><path d="M5 28 V14 C5 9.5 8 6.5 12 6.5 C16 6.5 19 9.5 19 14 V28 M19 14 C19 9.5 22 6.5 26 6.5 C30 6.5 33 9.5 33 14 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="3.2" r="1.9" fill="currentColor"/><circle cx="26" cy="29.5" r="1.9" fill="currentColor"/></svg>
+        Medical Place
+      </div>
+      <div class="cover-eyebrow">Programme Primo-Partenaires · Été 2026</div>
+      <div class="cover-title">Devenez <em>Primo-Partenaire</em><br>de Medical Place</div>
+      <div class="cover-sub">Le réseau social professionnel de la santé en France, ouvert aux 1,5 million de professionnels authentifiés RPPS. Une opportunité fondatrice, limitée à 60 partenaires sur tout le territoire.</div>
+      <div class="cover-deadline">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4M12 13v4M9 14h6"/></svg>
+        <span><strong>Offre d'été · jusqu'au 21 septembre 2026</strong> : gratuité jusqu'au 31/12/2026 + démarrage anticipé avant le lancement public. Programme Primo-Partenaire fermé définitivement le 31/12/2026.</span>
+      </div>
+    </div>
   </div>
-  <div style="flex:1;"></div>
-  <a class="btn-grad nav-cta" href="mailto:partenaires@medical-place.com?subject=Rendez-vous%20de%20cadrage%20%E2%80%93%20Programme%20Primo-Partenaires" style="display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 18px;border-radius:10px;background:linear-gradient(to right,#60a5fa,#2563eb);color:#fff;font-size:13.5px;font-weight:600;box-shadow:0 6px 18px rgba(37,99,235,.32);white-space:nowrap;">
-    Prendre rendez-vous
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-  </a>
-</nav>
 
-<!-- ===== HERO ===== -->
-<header id="top" class="hero-pad" style="max-width:1120px;margin:0 auto;padding:76px 24px 56px;text-align:center;">
-  <span style="display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:999px;background:rgba(13,148,136,.10);border:1px solid rgba(13,148,136,.28);color:#0f766e;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.6 4.8L18 9l-4.4 1.2L12 15l-1.6-4.8L6 9l4.4-1.2z"/></svg>
-    Programme Primo-Partenaires · Lancement 2026
-  </span>
-  <h1 class="hero-h1" style="font-size:52px;font-weight:700;line-height:1.08;letter-spacing:-.03em;margin:22px auto 0;max-width:880px;color:#18181b;text-wrap:balance;">
-    Atteignez <span style="background:linear-gradient(120deg,#0d9488,#0ea5e9);-webkit-background-clip:text;background-clip:text;color:transparent;">1,5 million</span> de professionnels de santé, là où LinkedIn échoue
-  </h1>
-  <p style="font-size:18px;line-height:1.6;color:#52525b;margin:22px auto 0;max-width:680px;">
-    Medical Place est le premier réseau social professionnel exclusivement dédié aux professionnels de santé français authentifiés RPPS. Un canal de communication ciblée, conforme et mesurable — construit avec 60 partenaires fondateurs avant le lancement public.
-  </p>
-  <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:34px;">
-    <a class="btn-grad" href="mailto:partenaires@medical-place.com?subject=Rendez-vous%20de%20cadrage%20%E2%80%93%20Programme%20Primo-Partenaires" style="display:inline-flex;align-items:center;gap:8px;height:52px;padding:0 26px;border-radius:12px;background:linear-gradient(to right,#60a5fa,#2563eb);color:#fff;font-size:15px;font-weight:600;box-shadow:0 10px 28px rgba(37,99,235,.34);">
-      Devenir Primo-Partenaire
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
-    <a class="btn-ghost" href="#tarifs" style="display:inline-flex;align-items:center;gap:8px;height:52px;padding:0 24px;border-radius:12px;background:#fff;color:#18181b;font-size:15px;font-weight:600;border:1px solid #dbdbde;">
-      Voir les tarifs
-    </a>
-  </div>
-  <div style="display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:12.5px;color:#71717a;font-weight:500;">
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-    Devis sous 48&nbsp;h · Résiliation libre au 31/12/2026 · Accompagnement dédié
-  </div>
-</header>
+  <div class="body">
 
-<!-- ===== STATS BAND ===== -->
-<section style="max-width:1120px;margin:0 auto;padding:0 24px 8px;">
-  <div style="background:#fff;border:1px solid #e2e8f0;border-radius:20px;box-shadow:0 1px 3px rgba(15,23,42,.06);display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;padding:30px 24px;">
-    <div style="text-align:center;padding:6px 12px;">
-      <div style="font-size:34px;font-weight:700;letter-spacing:-.02em;color:#0284c7;">1,5&nbsp;M</div>
-      <div style="font-size:12.5px;color:#71717a;font-weight:600;margin-top:4px;">Comptes PS pré-créés (RPPS / ADELI)</div>
-    </div>
-    <div class="stat-b" style="text-align:center;padding:6px 12px;border-left:1px solid #eef2f7;">
-      <div style="font-size:34px;font-weight:700;letter-spacing:-.02em;color:#0284c7;">100&nbsp;%</div>
-      <div style="font-size:12.5px;color:#71717a;font-weight:600;margin-top:4px;">Professionnels authentifiés RPPS</div>
-    </div>
-    <div class="stat-b" style="text-align:center;padding:6px 12px;border-left:1px solid #eef2f7;">
-      <div style="font-size:34px;font-weight:700;letter-spacing:-.02em;color:#0284c7;">60</div>
-      <div style="font-size:12.5px;color:#71717a;font-weight:600;margin-top:4px;">Places Primo-Partenaires</div>
-    </div>
-    <div class="stat-b" style="text-align:center;padding:6px 12px;border-left:1px solid #eef2f7;">
-      <div style="font-size:34px;font-weight:700;letter-spacing:-.02em;color:#0284c7;">48&nbsp;h</div>
-      <div style="font-size:12.5px;color:#71717a;font-weight:600;margin-top:4px;">Pour recevoir votre devis</div>
-    </div>
-  </div>
-</section>
+    <!-- =================== 01 — POURQUOI MEDICAL PLACE =================== -->
+    <div class="sec">
+      <div class="sec-eyebrow">01 — Pourquoi Medical Place</div>
+      <div class="sec-title">Atteindre les professionnels de santé là où LinkedIn et les autres échouent</div>
 
-<!-- ===== BÉNÉFICES ===== -->
-<section id="benefices" class="sec" style="max-width:1120px;margin:0 auto;padding:72px 24px 8px;scroll-margin-top:80px;">
-  <div style="text-align:center;max-width:680px;margin:0 auto 40px;">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#0f766e;">Pourquoi Medical Place</div>
-    <h2 class="sec-h2" style="font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 0;color:#18181b;">Un canal que LinkedIn et les CRM ne remplacent pas</h2>
-    <p style="font-size:16px;line-height:1.6;color:#52525b;margin:14px 0 0;">LinkedIn ne capte que 20&nbsp;% des médecins libéraux et moins de 10&nbsp;% des infirmiers. Les bases CRM s'usent, les congrès touchent une cible une seule fois. Medical Place vous ouvre un accès direct, permanent et conforme.</p>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;">
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#0d9488,#0ea5e9);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(13,148,136,.28);">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-      </div>
-      <h3 style="font-size:18px;font-weight:600;margin:18px 0 0;color:#18181b;">Une audience qualifiée et exhaustive</h3>
-      <p style="font-size:14px;line-height:1.6;color:#52525b;margin:8px 0 0;">100&nbsp;% des PS français inscrits via leur numéro RPPS ou ADELI. Un ciblage par spécialité réelle, savoir-faire et mode d'exercice — pas par déclaration.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#7c3aed,#a855f7);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(124,58,237,.26);">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 6.5 9.5 10M17 6.5 14.5 10M7 17.5 9.5 14M17 17.5 14.5 14"/></svg>
-      </div>
-      <h3 style="font-size:18px;font-weight:600;margin:18px 0 0;color:#18181b;">Des communautés segmentées</h3>
-      <p style="font-size:14px;line-height:1.6;color:#52525b;margin:8px 0 0;">Animez votre communauté de marque avec jusqu'à 15 sous-communautés ciblées par profession, spécialité, type d'établissement ou territoire.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#0ea5e9,#3b82f6);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(14,165,233,.28);">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5" fill="#fff" stroke="none"/></svg>
-      </div>
-      <h3 style="font-size:18px;font-weight:600;margin:18px 0 0;color:#18181b;">Une diffusion multi-canaux</h3>
-      <p style="font-size:14px;line-height:1.6;color:#52525b;margin:8px 0 0;">Fil d'actualité, agenda communautaire, notifications email et push, encarts display&nbsp;: vos messages touchent les PS sur plusieurs points de contact simultanés.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#f97316,#ef4444);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(249,115,22,.26);">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
-      </div>
-      <h3 style="font-size:18px;font-weight:600;margin:18px 0 0;color:#18181b;">Une performance mesurable</h3>
-      <p style="font-size:14px;line-height:1.6;color:#52525b;margin:8px 0 0;">Audience touchée, engagement par segment, conversions en temps réel. Reporting trimestriel personnalisé avec KPI métier : PS atteints par spécialité, contributions au pipeline.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#10b981,#0d9488);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(16,185,129,.26);">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>
-      </div>
-      <h3 style="font-size:18px;font-weight:600;margin:18px 0 0;color:#18181b;">Une conformité native</h3>
-      <p style="font-size:14px;line-height:1.6;color:#52525b;margin:8px 0 0;">Authentification RPPS de tous les PS, traçabilité des interactions, conformité RGPD santé. Un cadre légal lisible par votre direction juridique.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#ec4899,#7c3aed);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(236,72,153,.24);">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      </div>
-      <h3 style="font-size:18px;font-weight:600;margin:18px 0 0;color:#18181b;">Un capital de marque qui vous appartient</h3>
-      <p style="font-size:14px;line-height:1.6;color:#52525b;margin:8px 0 0;">Au-delà de la diffusion, vous construisez votre propre communauté éditoriale. Vous devenez la référence que les PS consultent dans votre catégorie.</p>
-    </div>
-  </div>
-</section>
+      <p class="sec-lead">Aujourd'hui, joindre les professionnels de santé français pour leur communiquer une offre médicale, une formation, un événement ou une innovation est <strong>structurellement difficile</strong>. LinkedIn ne capte que 20 % des médecins libéraux et moins de 10 % des infirmiers. Les bases CRM s'usent. Les visites médicales sont contraintes. Les congrès coûtent cher et touchent une cible une seule fois.</p>
 
-<!-- ===== CIBLES ===== -->
-<section id="cibles" class="sec" style="max-width:1120px;margin:0 auto;padding:72px 24px 8px;scroll-margin-top:80px;">
-  <div style="text-align:center;max-width:660px;margin:0 auto 40px;">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#0f766e;">Qui peut rejoindre</div>
-    <h2 class="sec-h2" style="font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 0;color:#18181b;">Conçu pour les fournisseurs du secteur santé</h2>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;">
-    <div style="position:relative;background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);overflow:hidden;">
-      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#0ea5e9;"></div>
-      <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#0ea5e9,#3b82f6);display:flex;align-items:center;justify-content:center;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
-      </div>
-      <h3 style="font-size:19px;font-weight:700;margin:16px 0 0;color:#18181b;">Éditeurs &amp; SaaS santé</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:8px 0 0;">Logiciels métier, startups e-santé, outils IA&nbsp;: touchez les early adopters cliniciens dans un cadre de confiance.</p>
-    </div>
-    <div style="position:relative;background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);overflow:hidden;">
-      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#f97316;"></div>
-      <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f97316,#ef4444);display:flex;align-items:center;justify-content:center;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>
-      </div>
-      <h3 style="font-size:19px;font-weight:700;margin:16px 0 0;color:#18181b;">Medtech &amp; dispositifs médicaux</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:8px 0 0;">Fabricants et distributeurs DM&nbsp;: démos en cabinet, formation à l'usage, demandes de devis auprès des prescripteurs.</p>
-    </div>
-    <div style="position:relative;background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);overflow:hidden;">
-      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#7c3aed;"></div>
-      <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#7c3aed,#a855f7);display:flex;align-items:center;justify-content:center;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="8" rx="4" transform="rotate(-30 12 13)"/><path d="M10.5 5 16 16"/></svg>
-      </div>
-      <h3 style="font-size:19px;font-weight:700;margin:16px 0 0;color:#18181b;">Laboratoires &amp; pharma</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:8px 0 0;">Catalogues, fiches produits, études cliniques et documentation médicale directement auprès des prescripteurs.</p>
-    </div>
-    <div style="position:relative;background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);overflow:hidden;">
-      <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#f59e0b;"></div>
-      <div style="width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,#f59e0b,#ef4444);display:flex;align-items:center;justify-content:center;">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9l10 5 10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
-      </div>
-      <h3 style="font-size:19px;font-weight:700;margin:16px 0 0;color:#18181b;">Formation, DPC &amp; assurance pro</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:8px 0 0;">Organismes de DPC et FMC, assureurs RC Pro&nbsp;: calendrier, formations certifiantes et offres dédiées aux PS.</p>
-    </div>
-  </div>
-</section>
+      <p>Medical Place est le <strong>premier réseau social professionnel exclusivement dédié aux PS français authentifiés RPPS</strong>. Avec 1,5 million de comptes pré-créés à partir des annuaires officiels (RPPS, ADELI), nous offrons aux fournisseurs du secteur santé un canal unique de communication ciblée, conforme et mesurable.</p>
 
-<!-- ===== AVANTAGES PRIMO-PARTENAIRE ===== -->
-<section id="avantages" class="sec" style="max-width:1120px;margin:0 auto;padding:72px 24px 8px;scroll-margin-top:80px;">
-  <div style="text-align:center;max-width:680px;margin:0 auto 40px;">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#0f766e;">Le statut Primo-Partenaire</div>
-    <h2 class="sec-h2" style="font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 0;color:#18181b;">Des avantages structurels, pas une simple remise</h2>
-    <p style="font-size:16px;line-height:1.6;color:#52525b;margin:14px 0 0;">Réservé aux 60 premiers partenaires. Un statut perpétuel qui vous distingue durablement des entrants ultérieurs, avec un tarif figé à vie à 70&nbsp;% du plein public.</p>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;">
-    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(15,23,42,.05);">
-      <div style="width:40px;height:40px;flex-shrink:0;border-radius:11px;background:#e0f5ff;color:#0284c7;display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
-      <div><div style="font-size:14.5px;font-weight:700;color:#18181b;">Tarif gelé à vie</div><div style="font-size:12.5px;line-height:1.55;color:#52525b;margin-top:3px;">Figé à 70&nbsp;% du plein public. Vous ne basculez jamais au tarif standard des entrants post-lancement.</div></div>
-    </div>
-    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(15,23,42,.05);">
-      <div style="width:40px;height:40px;flex-shrink:0;border-radius:11px;background:#ede9fe;color:#7c3aed;display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M9 13a3 3 0 0 0 6 0M12 13v5M9 18h6"/></svg></div>
-      <div><div style="font-size:14.5px;font-weight:700;color:#18181b;">Logo fondateur 5 ans</div><div style="font-size:12.5px;line-height:1.55;color:#52525b;margin-top:3px;">Votre marque affichée comme partenaire fondateur sur la page d'accueil et les supports institutionnels.</div></div>
-    </div>
-    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(15,23,42,.05);">
-      <div style="width:40px;height:40px;flex-shrink:0;border-radius:11px;background:#dcfce7;color:#15803d;display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg></div>
-      <div><div style="font-size:14.5px;font-weight:700;color:#18181b;">Démarrage anticipé</div><div style="font-size:12.5px;line-height:1.55;color:#52525b;margin-top:3px;">Créez vos sous-communautés et vos contenus dès l'été. Vous êtes déjà actif quand les PS arrivent.</div></div>
-    </div>
-    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(15,23,42,.05);">
-      <div style="width:40px;height:40px;flex-shrink:0;border-radius:11px;background:#fef3c7;color:#d97706;display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
-      <div><div style="font-size:14.5px;font-weight:700;color:#18181b;">Gratuité d'amorçage</div><div style="font-size:12.5px;line-height:1.55;color:#52525b;margin-top:3px;">Pour toute signature d'été, gratuité totale jusqu'au 31/12/2026. Premier paiement au 1er janvier 2027.</div></div>
-    </div>
-    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(15,23,42,.05);">
-      <div style="width:40px;height:40px;flex-shrink:0;border-radius:11px;background:#fce7f3;color:#be185d;display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14M5 12h11M5 17h8"/><path d="M18 15l3 3-3 3"/></svg></div>
-      <div><div style="font-size:14.5px;font-weight:700;color:#18181b;">−25&nbsp;% sur les services à vie</div><div style="font-size:12.5px;line-height:1.55;color:#52525b;margin-top:3px;">Tarifs décotés systématiques sur les campagnes display, packs add-ons et événements supplémentaires.</div></div>
-    </div>
-    <div style="display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:20px;box-shadow:0 1px 3px rgba(15,23,42,.05);">
-      <div style="width:40px;height:40px;flex-shrink:0;border-radius:11px;background:#e0f5ff;color:#0284c7;display:flex;align-items:center;justify-content:center;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
-      <div><div style="font-size:14.5px;font-weight:700;color:#18181b;">Résiliation libre au 31/12/2026</div><div style="font-size:12.5px;line-height:1.55;color:#52525b;margin-top:3px;">Sans frais ni pénalité. Vous testez la plateforme pendant la gratuité avant tout engagement ferme.</div></div>
-    </div>
-  </div>
-</section>
+      <div class="benefit-grid">
 
-<!-- ===== TARIFS ===== -->
-<section id="tarifs" class="sec" style="max-width:1120px;margin:0 auto;padding:72px 24px 8px;scroll-margin-top:80px;">
-  <div style="text-align:center;max-width:680px;margin:0 auto 40px;">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#0f766e;">Les tarifs</div>
-    <h2 class="sec-h2" style="font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 0;color:#18181b;">Trois paliers Communauté Sponsor</h2>
-    <p style="font-size:16px;line-height:1.6;color:#52525b;margin:14px 0 0;">Choisissez le palier adapté à votre structure. Le <strong style="color:#0f766e;">tarif Primo-Partenaire</strong> reste gelé à vie pour les 60 fondateurs.</p>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;align-items:stretch;">
-    <!-- Business -->
-    <div style="display:flex;flex-direction:column;background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:28px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#18181b;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#71717a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-        Business
-      </div>
-      <div style="margin-top:16px;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#18181b;line-height:1;">1 000 €<span style="font-size:14px;font-weight:500;color:#71717a;"> /mois</span></div>
-      <div style="font-size:12.5px;color:#a1a1aa;margin-top:4px;">12 000 €/an au tarif plein</div>
-      <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.20);font-size:13px;font-weight:700;color:#0f766e;">Primo-Partenaire&nbsp;: 600 €/mois <span style="font-weight:500;color:#0d9488;">· 7 200 €/an</span></div>
-      <div style="font-size:12.5px;color:#71717a;font-style:italic;margin-top:14px;">Éditeurs SaaS établis, DPC, ETI medtech</div>
-      <div style="display:flex;flex-direction:column;gap:9px;margin-top:18px;">
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>5 sous-communautés thématiques</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>10 annonces d'événements/an</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>25 invitations PS/mois</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>Ciblage RPPS avancé illimité</div>
-      </div>
-      <a class="btn-ghost" href="mailto:partenaires@medical-place.com?subject=Devis%20Business%20%E2%80%93%20Programme%20Primo-Partenaires" style="margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:46px;border-radius:11px;background:#fff;color:#18181b;font-size:14px;font-weight:600;border:1px solid #dbdbde;margin-top:22px;">Demander un devis</a>
-    </div>
-    <!-- Premium -->
-    <div style="display:flex;flex-direction:column;background:#fff;border:2px solid #0ea5e9;border-radius:20px;padding:28px;box-shadow:0 14px 34px rgba(14,165,233,.16);position:relative;">
-      <span style="position:absolute;top:-12px;left:24px;font-size:10px;font-weight:700;letter-spacing:.06em;padding:5px 11px;border-radius:7px;background:#0ea5e9;color:#fff;">CŒUR DE CIBLE</span>
-      <div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#18181b;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M9 16h6"/></svg>
-        Premium
-      </div>
-      <div style="margin-top:16px;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#18181b;line-height:1;">2 500 €<span style="font-size:14px;font-weight:500;color:#71717a;"> /mois</span></div>
-      <div style="font-size:12.5px;color:#a1a1aa;margin-top:4px;">30 000 €/an au tarif plein</div>
-      <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.20);font-size:13px;font-weight:700;color:#0f766e;">Primo-Partenaire&nbsp;: 1 500 €/mois <span style="font-weight:500;color:#0d9488;">· 18 000 €/an</span></div>
-      <div style="font-size:12.5px;color:#71717a;font-style:italic;margin-top:14px;">Medtech, DM, gros DPC, assurance pro</div>
-      <div style="display:flex;flex-direction:column;gap:9px;margin-top:18px;">
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg><span><strong>15</strong> sous-communautés thématiques</span></div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>30 annonces d'événements/an</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>100 invitations PS/mois</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>Diffusion étendue aux contacts des membres</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>Édition ciblée des posts par segment</div>
-      </div>
-      <a class="btn-grad" href="mailto:partenaires@medical-place.com?subject=Devis%20Premium%20%E2%80%93%20Programme%20Primo-Partenaires" style="margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:46px;border-radius:11px;background:linear-gradient(to right,#60a5fa,#2563eb);color:#fff;font-size:14px;font-weight:600;margin-top:22px;box-shadow:0 8px 22px rgba(37,99,235,.30);">Demander un devis</a>
-    </div>
-    <!-- Enterprise -->
-    <div style="display:flex;flex-direction:column;background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:28px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:#18181b;">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#71717a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l3-8 6 4 6-8 3 12z"/></svg>
-        Enterprise
-      </div>
-      <div style="margin-top:16px;font-size:34px;font-weight:700;letter-spacing:-.02em;color:#18181b;line-height:1;">Sur devis</div>
-      <div style="font-size:12.5px;color:#a1a1aa;margin-top:4px;">≥ 60 000 €/an</div>
-      <div style="margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.20);font-size:13px;font-weight:700;color:#0f766e;">Primo-Partenaire&nbsp;: −30 à −40&nbsp;% négocié</div>
-      <div style="font-size:12.5px;color:#71717a;font-style:italic;margin-top:14px;">Grands groupes medtech multi-marques</div>
-      <div style="display:flex;flex-direction:column;gap:9px;margin-top:18px;">
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>Sous-communautés illimitées</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>Annonces d'événements illimitées</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>250 invitations PS/mois</div>
-        <div style="display:flex;gap:9px;font-size:13px;color:#3f3f46;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-top:1px;"><path d="M20 6 9 17l-5-5"/></svg>Design de communauté sur-mesure</div>
-      </div>
-      <a class="btn-ghost" href="mailto:partenaires@medical-place.com?subject=Contact%20Enterprise%20%E2%80%93%20Programme%20Primo-Partenaires" style="margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;height:46px;border-radius:11px;background:#fff;color:#18181b;font-size:14px;font-weight:600;border:1px solid #dbdbde;margin-top:22px;">Nous contacter</a>
-    </div>
-  </div>
-  <div style="display:flex;align-items:center;gap:12px;margin-top:18px;padding:16px 20px;background:rgba(14,165,233,.06);border:1px solid rgba(14,165,233,.18);border-radius:14px;">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
-    <div style="font-size:13px;line-height:1.5;color:#52525b;">Services additionnels (encarts display Medical Place, sous-communautés supplémentaires, événements au-delà du quota) disponibles en option — <strong style="color:#18181b;">−25&nbsp;% à vie pour les Primo-Partenaires</strong>, cumulables avec le Programme Amplification.</div>
-  </div>
-</section>
+        <div class="benefit">
+          <div class="benefit-num">1</div>
+          <div class="benefit-title">Une audience qualifiée et exhaustive</div>
+          <div class="benefit-desc">100 % des PS français sont déjà inscrits via leur <strong>numéro RPPS ou ADELI</strong>. Pas de ciblage par déclaration ou par titre, mais par <strong>spécialité réelle, savoir-faire et mode d'exercice</strong>. Aucune autre plateforme ne propose ce niveau de précision en France.</div>
+        </div>
 
-<!-- ===== ÉTAPES ===== -->
-<section id="etapes" class="sec" style="max-width:1120px;margin:0 auto;padding:72px 24px 8px;scroll-margin-top:80px;">
-  <div style="text-align:center;max-width:660px;margin:0 auto 44px;">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#0f766e;">Les prochaines étapes</div>
-    <h2 class="sec-h2" style="font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 0;color:#18181b;">Devenir Primo-Partenaire en 3 étapes</h2>
-    <p style="font-size:16px;line-height:1.6;color:#52525b;margin:14px 0 0;">Le processus est court, le contrat est standard, l'activation est immédiate.</p>
-  </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:38px;height:38px;border-radius:11px;background:#e0f2fe;color:#0284c7;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;">1</div>
-      <h3 style="font-size:16.5px;font-weight:600;margin:16px 0 0;color:#18181b;">Rendez-vous de cadrage · 45 min</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:7px 0 0;">Identification du palier, des cibles RPPS et du périmètre. Devis envoyé sous 48 h.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:38px;height:38px;border-radius:11px;background:#e0f2fe;color:#0284c7;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;">2</div>
-      <h3 style="font-size:16.5px;font-weight:600;margin:16px 0 0;color:#18181b;">Signature du contrat</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:7px 0 0;">Signez tôt pour bénéficier de la gratuité d'amorçage et du démarrage anticipé, dans la limite des 60 places.</p>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:26px;box-shadow:0 1px 3px rgba(15,23,42,.06);">
-      <div style="width:38px;height:38px;border-radius:11px;background:#e0f2fe;color:#0284c7;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;">3</div>
-      <h3 style="font-size:16.5px;font-weight:600;margin:16px 0 0;color:#18181b;">Onboarding · 15 jours</h3>
-      <p style="font-size:13.5px;line-height:1.6;color:#52525b;margin:7px 0 0;">Setup de votre communauté, formation des admins, activation des comptes pré-créés de votre base.</p>
-    </div>
-  </div>
-</section>
+        <div class="benefit">
+          <div class="benefit-num">2</div>
+          <div class="benefit-title">Des communautés segmentées par catégorie</div>
+          <div class="benefit-desc">Animez votre propre communauté de marque avec jusqu'à <strong>15 sous-communautés ciblées</strong> par profession, spécialité, type d'établissement ou territoire. Un fabricant d'échographes peut y rassembler radiologues, sages-femmes échographistes et MG dans des espaces dédiés.</div>
+        </div>
 
-<!-- ===== FAQ ===== -->
-<section id="faq" class="sec" style="max-width:760px;margin:0 auto;padding:72px 24px 8px;scroll-margin-top:80px;">
-  <div style="text-align:center;margin:0 auto 40px;">
-    <div style="font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#0f766e;">Questions fréquentes</div>
-    <h2 class="sec-h2" style="font-size:34px;font-weight:700;letter-spacing:-.02em;margin:12px 0 0;color:#18181b;">Tout ce qu'il faut savoir</h2>
+        <div class="benefit">
+          <div class="benefit-num">3</div>
+          <div class="benefit-title">Une diffusion multi-canaux puissante</div>
+          <div class="benefit-desc">Vos publications et événements atteignent les PS sur de multiples points de contact simultanés — fil d'actualité, agenda communautaire, récapitulatif national, groupe de discussion, notifications email et push. <strong>Deux niveaux de portée dans le feed selon votre palier</strong> : membres de votre communauté, ou étendu aux contacts professionnels de vos membres (cooptation). Pour toucher <strong>toute votre cible RPPS</strong> sans passer par le feed, les encarts display Medical Place assurent une diffusion non intrusive et sans plafond.</div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-num">4</div>
+          <div class="benefit-title">Une mesure de performance et un ROI réel</div>
+          <div class="benefit-desc">Suivez en temps réel l'audience touchée, l'engagement par segment, et les conversions de chaque action. <strong>Reporting trimestriel personnalisé</strong> avec KPI métier : PS atteints par spécialité, taux d'engagement, contributions à votre pipeline. Aucun outil concurrent ne propose ce niveau de mesure sur une audience PS authentifiée RPPS.</div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-num">5</div>
+          <div class="benefit-title">Une conformité native pour vos communications PS</div>
+          <div class="benefit-desc">La plateforme est conçue dès l'origine pour respecter les exigences réglementaires du secteur santé : <strong>authentification RPPS de tous les PS</strong>, traçabilité des interactions, conformité RGPD santé, et environnement maîtrisé pour vos communications encadrées. Vous communiquez en confiance, dans un cadre légal lisible par votre direction juridique.</div>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-num">6</div>
+          <div class="benefit-title">Un capital de marque qui vous appartient</div>
+          <div class="benefit-desc">Au-delà de la diffusion publicitaire interruptive, vous <strong>construisez et animez votre propre communauté éditoriale</strong> au nom de votre marque. Vos clients, prospects et ambassadeurs PS s'y retrouvent autour de vos solutions, vous y animez les conversations qui structurent votre catégorie, et vous devenez progressivement la <strong>référence que les PS consultent</strong> dans votre domaine. Un capital de notoriété et d'autorité qui se renforce à chaque interaction et qui appartient durablement à votre entreprise.</div>
+        </div>
+
+      </div>
+
+      <div class="inset teal" style="margin-top:18px;">
+        <div class="inset-title">Notre stratégie d'acquisition PS</div>
+        <div class="inset-body">
+          Pour garantir que les professionnels de santé sont effectivement présents et actifs sur Medical Place dès le lancement, nous concentrons notre acquisition sur les <strong>prescripteurs institutionnels</strong> qui ont l'oreille des PS : <strong>sociétés savantes, CPTS, URPS, institutionnels (HAS, ANSM, Ordres), universités et organismes de formation continue, associations de santé et de patients</strong>. Pas de publicité grand public anonyme — nous adressons les structures qui recommanderont Medical Place à leurs adhérents.<br><br>
+          Cet engagement est <strong>contractualisé dans votre contrat Primo-Partenaire</strong> : nous investissons <strong>50 % des revenus de la plateforme Medical Place en 2027 et 35 % en 2028</strong> dans cette acquisition institutionnelle (plafonnés à 500 k€ en 2027 et 1 M€ en 2028). Vous bénéficiez directement de cet effort de notoriété puisque les PS recrutés rejoindront vos communautés et vos campagnes ciblées.
+        </div>
+      </div>
+    </div>
+
+    <!-- =================== 02 — POURQUOI MAINTENANT =================== -->
+    <div class="sec">
+      <div class="sec-eyebrow">02 — Pourquoi rejoindre maintenant</div>
+      <div class="sec-title">Une opportunité réservée au lancement</div>
+
+      <p class="sec-lead">Medical Place ouvre publiquement le <strong>8 septembre 2026</strong> avec 1,5 million de comptes PS pré-créés. Avant ce lancement, nous co-construisons l'écosystème avec <strong>60 partenaires fondateurs — ni plus, ni moins</strong>. Le programme est ouvert jusqu'au 31 décembre 2026, avec une fenêtre d'été particulièrement valorisée pour les signataires avant le 21 septembre.</p>
+
+      <p>Ces 60 places sont <strong>réservées au lancement</strong> et ne seront pas réouvertes après le 31 décembre 2026. À cette date, la grille tarifaire passe au plein régime, le label Primo-Partenaire devient inattribuable, et les avantages structurels (tarif gelé à vie, tarif privilégié sur les services, accès privilégié features) ne sont plus accessibles.</p>
+
+      <div class="hero-offer">
+        <div class="hero-offer-inner">
+          <span class="hero-offer-tag">Offre d'été · jusqu'au 21 septembre 2026</span>
+          <div class="hero-offer-title">Signez cet été pour prendre l'avance avant le lancement public</div>
+          <div class="hero-offer-sub">Pour tout contrat Primo-Partenaire signé entre le 1er juillet et le 21 septembre 2026, vous bénéficiez de <strong>deux avantages cumulés</strong> : la gratuité de votre abonnement jusqu'au 31 décembre 2026, et surtout le <strong>démarrage anticipé de votre communauté avant le lancement public du 8 septembre</strong>. Vous préparez vos sous-communautés, vos contenus et vos équipes pendant que les autres attendent encore. <strong>Résiliation libre au 31 décembre 2026 sans frais.</strong></div>
+        </div>
+      </div>
+
+      <div class="inset">
+        <div class="inset-title">Et si vous ne pouvez pas signer cet été ?</div>
+        <div class="inset-body">Le programme Primo-Partenaire reste accessible <strong>jusqu'au 31 décembre 2026</strong>, dans la limite des places disponibles. Une signature entre le 22 septembre et le 31 décembre vous donne le statut Primo-Partenaire à vie (tarif gelé, logo, tarif privilégié sur les services), mais <strong>sans la gratuité d'amorçage ni le bénéfice du démarrage anticipé</strong>. Vous arrivez dans une plateforme déjà publique et active, où vos concurrents auront eu le temps de s'installer.</div>
+      </div>
+    </div>
+
+    <!-- =================== 03 — AVANTAGES FOUNDER =================== -->
+    <div class="sec">
+      <div class="sec-eyebrow">03 — Avantages du programme</div>
+      <div class="sec-title">Huit avantages structurels, pas une simple remise</div>
+
+      <p class="sec-lead">Le statut Primo-Partenaire n'est pas une promotion d'amorçage. C'est un <strong>statut perpétuel</strong> qui vous distingue durablement des entrants ultérieurs.</p>
+
+      <div class="avantages">
+
+        <div class="av-card">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Tarif gelé à vie</div>
+            <div class="av-desc">À l'expiration de l'année Primo-Partenaire 2027, votre tarif reste figé à 70 % du plein public. Vous ne basculez jamais au tarif standard appliqué aux entrants post-lancement.</div>
+          </div>
+        </div>
+
+        <div class="av-card v">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h8v4a4 4 0 0 1-8 0z"/><path d="M5 4h3M16 4h3M9 13a3 3 0 0 0 6 0M12 13v5M9 18h6M8 21h8"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Logo Primo-Partenaire pendant 5 ans</div>
+            <div class="av-desc">Votre marque affichée comme partenaire fondateur sur la page d'accueil et dans tous les supports institutionnels de Medical Place pendant 5 ans.</div>
+          </div>
+        </div>
+
+        <div class="av-card a">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Gratuité d'été 2026</div>
+            <div class="av-desc">Pour toute signature avant le 21 septembre 2026, gratuité totale jusqu'au 31 décembre 2026. Premier paiement uniquement au 1er janvier 2027.</div>
+          </div>
+        </div>
+
+        <div class="av-card t">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8M14 7h7v7"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Démarrage anticipé</div>
+            <div class="av-desc">Créez votre communauté, designez vos sous-communautés et chargez vos contenus dès juillet 2026. Quand les PS arrivent le 8 septembre, vous êtes déjà actif — vos concurrents qui signeront après arriveront dans une plateforme déjà animée.</div>
+          </div>
+        </div>
+
+        <div class="av-card r">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14M5 12h14M5 17h9"/><path d="M19 17l-3 3M19 17l3 3"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Tarif privilégié sur tous les services</div>
+            <div class="av-desc">En tant que Primo-Partenaire, vous bénéficiez de <strong>tarifs décotés systématiques</strong> sur l'ensemble des services additionnels : <strong>−25 %</strong> sur les campagnes d'encarts display Medical Place, <strong>−30 %</strong> sur les packs add-ons annuels (sous-communautés supplémentaires), <strong>−25 %</strong> sur les annonces d'événements supplémentaires au-delà du quota inclus. Un avantage perpétuel, qui se cumule avec le tarif gelé à vie.</div>
+          </div>
+        </div>
+
+        <div class="av-card g">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Engagement d'investissement marketing</div>
+            <div class="av-desc">Medical Place s'engage contractuellement à investir <strong>50 % des revenus de la plateforme Medical Place en 2027 et 35 % en 2028</strong> (plafonnés à 500 k€ et 1 M€) dans l'acquisition PS auprès des sociétés savantes, CPTS, institutionnels, universités et associations de santé. <strong>Garantie d'audience</strong> : si l'objectif de 30 000 PS actifs fin 2027 n'est pas atteint à 70 %, vous bénéficiez d'une période de gratuité équivalente sur l'année 2028 (3 à 6 mois offerts). Le risque d'amorçage est partagé contractuellement.</div>
+          </div>
+        </div>
+
+        <div class="av-card">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14l-7 7-7-7M12 21V5"/><circle cx="12" cy="4" r="1.5"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Résiliation libre au 31/12/2026</div>
+            <div class="av-desc">Vous restez libre de résilier au 31 décembre 2026 sans frais ni pénalité, à votre seule initiative. Vous testez la plateforme pendant la gratuité d'été avant tout engagement ferme.</div>
+          </div>
+        </div>
+
+        <div class="av-card v">
+          <div class="av-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 9.4 4.5l-3.5-.5-.5 3.5L2 10l2.5 2.5-.5 3.5 3.5-.5L10 18l2.5-2.5 3.5.5.5-3.5L19 10l-2.5-2.5.5-3.5-3.5.5L12 2z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div class="av-body">
+            <div class="av-title">Accès privilégié aux nouvelles features</div>
+            <div class="av-desc">Découverte en avant-première des évolutions de la plateforme avant leur déploiement public. Vous orientez votre usage en fonction de la roadmap.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-offer" style="margin-top:18px;">
+        <div class="hero-offer-inner">
+          <span class="hero-offer-tag">Programme Amplification · Exclusif Primo-Partenaires</span>
+          <div class="hero-offer-title">Débloquez jusqu'à 3 campagnes display à −80 % en animant votre communauté</div>
+          <div class="hero-offer-sub">En plus des avantages ci-dessus, un dispositif d'amplification unique récompense les Primo-Partenaires qui recrutent activement leurs communautés. Selon l'audience mobilisée au 15 décembre 2026, vous débloquez <strong>1 à 3 campagnes d'encarts display Medical Place à tarif exceptionnel</strong> — jusqu'à <strong>−80 % du tarif plein</strong> pour les Primo-Partenaires signés avant le 21 septembre 2026 (−60 % après). Ce dispositif se cumule avec la remise standard de −25 % à vie. <em>Détails complets dans la fiche Services additionnels.</em></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================== 04 — TARIFS (VUE D'ENSEMBLE CLIQUABLE) =================== -->
+    <div class="sec">
+      <div class="sec-eyebrow">04 — Les tarifs</div>
+      <div class="sec-title">Choisissez le palier adapté à votre structure</div>
+
+      <p class="sec-lead">Trois paliers d'abonnement Communauté Sponsor — Business, Premium, Enterprise — accompagnés des services additionnels. <strong>Cliquez sur chaque palier pour découvrir le détail des fonctionnalités, des exemples d'usage et la mécanique tarifaire complète.</strong></p>
+
+      <div class="compare-btn-wrap">
+        <button class="compare-btn" onclick="showView('view-compare')">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18M8 3v18M16 3v18"/></svg>
+          Comparer les 3 offres côte à côte
+        </button>
+      </div>
+
+      <!-- COMMUNAUTÉS SPONSOR -->
+      <div class="tarifs-family">
+        <div class="tarifs-family-hd">
+          <span class="tarifs-family-pill b">COMMUNAUTÉS SPONSOR</span>
+          <span class="tarifs-family-name">Trois paliers selon votre dimension</span>
+          <span class="tarifs-family-sub">· présence éditoriale ciblée par segments PS</span>
+        </div>
+
+        <div class="tarifs-cards">
+
+          <button class="tarif-card" onclick="showView('view-business')">
+            <div class="tarif-hd">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              Business
+            </div>
+            <div class="tarif-price">1 000 €<small>/mois</small></div>
+            <div class="tarif-yearly">12 000 €/an</div>
+            <div class="tarif-deal"><strong>Primo-Partenaire : 600 €/mois</strong> · 7 200 €/an</div>
+            <div class="tarif-target">Éditeurs SaaS établis, DPC, ETI medtech</div>
+            <div class="tarif-cta">
+              Voir le détail
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </button>
+
+          <button class="tarif-card hl-b" onclick="showView('view-premium')">
+            <div class="tarif-flag b">CŒUR DE CIBLE</div>
+            <div class="tarif-hd">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M9 16h6"/></svg>
+              Premium
+            </div>
+            <div class="tarif-price">2 500 €<small>/mois</small></div>
+            <div class="tarif-yearly">30 000 €/an</div>
+            <div class="tarif-deal"><strong>Primo-Partenaire : 1 500 €/mois</strong> · 18 000 €/an</div>
+            <div class="tarif-target">Medtech, DM, gros DPC, assurance pro</div>
+            <div class="tarif-cta">
+              Voir le détail
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </button>
+
+          <button class="tarif-card" onclick="showView('view-enterprise')">
+            <div class="tarif-hd">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l3-8 6 4 6-8 3 12z"/></svg>
+              Enterprise
+            </div>
+            <div class="tarif-price">Sur devis</div>
+            <div class="tarif-yearly">≥ 60 000 €/an</div>
+            <div class="tarif-deal"><strong>Primo-Partenaire : −30 à −40 %</strong> négocié</div>
+            <div class="tarif-target">Grands groupes medtech multi-marques</div>
+            <div class="tarif-cta">
+              Voir le détail
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- SERVICES ADDITIONNELS -->
+      <div class="tarifs-family">
+        <div class="tarifs-family-hd">
+          <span class="tarifs-family-pill c">SERVICES ADDITIONNELS</span>
+          <span class="tarifs-family-name">Pour aller plus loin</span>
+          <span class="tarifs-family-sub">· en plus de votre abonnement Communauté</span>
+        </div>
+
+        <button class="tarif-c-card" onclick="showView('view-services')">
+          <div class="tarif-c-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+          </div>
+          <div class="tarif-c-body">
+            <div class="tarif-c-title">Services additionnels &amp; campagnes ciblées</div>
+            <div class="tarif-c-desc">Boostez la portée de votre communauté avec des services complémentaires. <strong>Tarifs Primo-Partenaire décotés sur tous les services (−25 %), cumulables avec le Programme Amplification (jusqu'à −80 %).</strong></div>
+            <div class="tarif-c-tags">
+              <span class="tarif-c-tag">Encarts display Medical Place</span>
+              <span class="tarif-c-tag">Programme Amplification</span>
+              <span class="tarif-c-tag">Annonces d'événements supp.</span>
+              <span class="tarif-c-tag">Sous-communautés supp.</span>
+              <span class="tarif-c-tag">Setup d'onboarding</span>
+            </div>
+          </div>
+          <div class="tarif-c-arrow">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- =================== 05 — PROCHAINES ÉTAPES =================== -->
+    <div class="cta-final">
+      <div class="cta-final-eyebrow">05 — Les prochaines étapes</div>
+      <div class="cta-final-title">Comment devenir Primo-Partenaire cet été</div>
+      <div class="cta-final-sub">Le processus est court, le contrat est standard, l'activation est immédiate.</div>
+
+      <div class="cta-final-steps">
+        <div class="cta-step">
+          <div class="cta-step-num">ÉTAPE 1</div>
+          <div class="cta-step-name">Rendez-vous de cadrage · 45 min</div>
+          <div class="cta-step-detail">Identification du palier, des cibles RPPS et du périmètre. Devis envoyé sous 48 h.</div>
+        </div>
+        <div class="cta-step">
+          <div class="cta-step-num">ÉTAPE 2</div>
+          <div class="cta-step-name">Signature avant le 21 septembre 2026</div>
+          <div class="cta-step-detail">Pour bénéficier de la gratuité d'amorçage et du démarrage anticipé. Sinon, jusqu'au 31/12/2026 dans la limite des places.</div>
+        </div>
+        <div class="cta-step">
+          <div class="cta-step-num">ÉTAPE 3</div>
+          <div class="cta-step-name">Onboarding 15 jours</div>
+          <div class="cta-step-detail">Setup de votre communauté, formation des admins, activation des comptes pré-créés de votre base.</div>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div style="display:flex;flex-direction:column;gap:12px;">
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden;">
-      <button class="faq-q" type="button" aria-expanded="true" aria-controls="faq-a-1" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;">
-        <span style="font-size:15.5px;font-weight:600;color:#18181b;">Qui peut devenir Primo-Partenaire ?</span>
-        <span class="faq-chev" style="flex-shrink:0;color:#0284c7;transition:transform .2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </span>
+
+  <div class="foot">
+    <div><strong>Crown Digital</strong> · Medical Place · Programme Primo-Partenaires</div>
+    <div>Été 2026 · Document de présentation commerciale</div>
+  </div>
+</div>
+
+
+<!-- ================================================================ -->
+<!-- =================== FICHE COMPARAISON =========================== -->
+<!-- ================================================================ -->
+<div class="view" id="view-compare">
+  <div class="detail-head">
+    <button class="back-btn" onclick="showView('view-main')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Retour à la vue d'ensemble
+    </button>
+  </div>
+
+  <div class="compare-hero">
+    <div class="detail-eyebrow">Comparer les offres</div>
+    <div class="detail-title">Business · Premium · Enterprise</div>
+    <div class="detail-tagline">Vue côte à côte des trois paliers Communauté Sponsor. Trouvez en un coup d'œil le palier adapté à votre dimension et à vos besoins.</div>
+  </div>
+
+  <div class="compare-table-wrap">
+    <table class="compare-table">
+      <colgroup>
+        <col class="col-crit">
+        <col class="col-tier">
+        <col class="col-tier">
+        <col class="col-tier">
+      </colgroup>
+      <thead>
+        <tr>
+          <th><div class="compare-th-cell crit">Critère</div></th>
+          <th>
+            <div class="compare-th-cell tier">
+              <div>BUSINESS</div>
+              <div class="tier-name">1&nbsp;000&nbsp;€<small style="font-size:11px;font-weight:500;color:var(--t3);">/mois</small></div>
+              <div class="tier-price-row">12&nbsp;000&nbsp;€/an au tarif plein</div>
+              <div class="tier-price-row founder">Primo-Partenaire : 7&nbsp;200&nbsp;€/an</div>
+            </div>
+          </th>
+          <th>
+            <div class="compare-th-cell tier premium">
+              <span class="tier-flag-mini">CŒUR DE CIBLE</span>
+              <div>PREMIUM</div>
+              <div class="tier-name">2&nbsp;500&nbsp;€<small style="font-size:11px;font-weight:500;color:var(--t3);">/mois</small></div>
+              <div class="tier-price-row">30&nbsp;000&nbsp;€/an au tarif plein</div>
+              <div class="tier-price-row founder">Primo-Partenaire : 18&nbsp;000&nbsp;€/an</div>
+            </div>
+          </th>
+          <th>
+            <div class="compare-th-cell tier">
+              <div>ENTERPRISE</div>
+              <div class="tier-name">Sur devis</div>
+              <div class="tier-price-row">≥&nbsp;60&nbsp;000&nbsp;€/an</div>
+              <div class="tier-price-row founder">Primo-Partenaire : −30 à −40&nbsp;%</div>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="category-row"><td colspan="4">Communauté &amp; sous-communautés</td></tr>
+
+        <tr>
+          <td class="crit">Communauté autonome à votre nom</td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Sous-communautés thématiques</td>
+          <td class="val"><span class="cmp-strong">5</span></td>
+          <td class="val premium-col"><span class="cmp-strong">15</span></td>
+          <td class="val premium-col"><span class="cmp-highlight">Illimité</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Design personnalisé de la communauté</td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-highlight">Sur-mesure</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Invitations PS à rejoindre une communauté</td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;"><span class="cmp-strong">25</span><br>par mois</td>
+          <td class="val premium-col" style="font-size:11.5px;line-height:1.4;"><span class="cmp-strong">100</span> par mois<br>(50 max/communauté)</td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;"><span class="cmp-highlight">250</span><br>par mois</td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Ciblage RPPS &amp; édition</td></tr>
+
+        <tr>
+          <td class="crit">Ciblage RPPS avancé illimité</td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Combinaisons profession × savoir-faire × territoire</td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Édition ciblée des posts par segment</td>
+          <td class="val"><span class="cmp-no">—</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Annonces d'événements</td></tr>
+
+        <tr>
+          <td class="crit">Annonces d'événements/an incluses</td>
+          <td class="val"><span class="cmp-strong">10</span></td>
+          <td class="val premium-col"><span class="cmp-strong">30</span></td>
+          <td class="val premium-col"><span class="cmp-highlight">Illimité</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Diffusion des annonces d'événements</td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;">Membres de<br>la communauté</td>
+          <td class="val premium-col" style="font-size:11.5px;line-height:1.4;"><span class="cmp-highlight">+ Contacts<br>des membres</span></td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;"><span class="cmp-highlight">+ Contacts<br>des membres</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Annonce supplémentaire au-delà du quota</td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;">100&nbsp;€<br>(75&nbsp;€ PP)</td>
+          <td class="val premium-col" style="font-size:11.5px;line-height:1.4;">200&nbsp;€<br>(150&nbsp;€ PP)</td>
+          <td class="val">N/A · illimité</td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Diffusion &amp; visibilité</td></tr>
+
+        <tr>
+          <td class="crit">Posts sponsorisés dans le feed</td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;">Membres</td>
+          <td class="val premium-col" style="font-size:11.5px;line-height:1.4;"><span class="cmp-highlight">Membres + contacts<br>de même profession</span></td>
+          <td class="val" style="font-size:11.5px;line-height:1.4;"><span class="cmp-highlight">Membres + contacts<br>de même profession</span></td>
+        </tr>
+        <tr>
+          <td class="crit">CTA externe sur votre page communauté</td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Reporting &amp; performance</td></tr>
+
+        <tr>
+          <td class="crit">Analytics en temps réel</td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Rapport personnalisé</td>
+          <td class="val"><span class="cmp-no">—</span></td>
+          <td class="val premium-col"><span class="cmp-strong">Trimestriel</span></td>
+          <td class="val"><span class="cmp-highlight">Sur-mesure</span></td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Administration &amp; équipe</td></tr>
+
+        <tr>
+          <td class="crit">Nombre d'administrateurs</td>
+          <td class="val"><span class="cmp-strong">3</span></td>
+          <td class="val premium-col"><span class="cmp-strong">10</span></td>
+          <td class="val premium-col"><span class="cmp-highlight">Illimité</span></td>
+        </tr>
+        <tr>
+          <td class="crit">API &amp; intégration CRM (Veeva, Salesforce)</td>
+          <td class="val"><span class="cmp-no">—</span></td>
+          <td class="val premium-col"><span class="cmp-no">—</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Application mobile de prise de lead en congrès</td>
+          <td class="val"><span class="cmp-no">—</span></td>
+          <td class="val premium-col"><span class="cmp-no">—</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Accompagnement Medical Place</td></tr>
+
+        <tr>
+          <td class="crit">Customer Success dédié</td>
+          <td class="val"><span class="cmp-no">—</span></td>
+          <td class="val premium-col"><span class="cmp-yes">✓</span></td>
+          <td class="val"><span class="cmp-highlight">Key Account Manager</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Setup d'onboarding</td>
+          <td class="val">1&nbsp;500 € · <span class="cmp-strong" style="color:var(--teal);">offert PP été</span></td>
+          <td class="val premium-col">2&nbsp;500 € · <span class="cmp-strong" style="color:var(--teal);">offert PP été</span></td>
+          <td class="val">3&nbsp;500 € · <span class="cmp-strong" style="color:var(--teal);">offert PP été</span></td>
+        </tr>
+        <tr>
+          <td class="crit">Co-branding events nationaux Medical Place</td>
+          <td class="val"><span class="cmp-no">—</span></td>
+          <td class="val premium-col"><span class="cmp-no">—</span></td>
+          <td class="val"><span class="cmp-yes">✓</span></td>
+        </tr>
+
+        <tr class="category-row"><td colspan="4">Cible recommandée</td></tr>
+
+        <tr>
+          <td class="crit">Profils types</td>
+          <td class="val" style="text-align:left;font-size:11.5px;line-height:1.45;">Éditeurs SaaS établis · DPC · ETI medtech · assurance pro</td>
+          <td class="val premium-col" style="text-align:left;font-size:11.5px;line-height:1.45;"><strong>Industriels medtech / DM · gros DPC · grands acteurs assurance</strong></td>
+          <td class="val" style="text-align:left;font-size:11.5px;line-height:1.45;">Grands groupes multi-marques · multi-catégories · multi-pays</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p style="margin-top:12px;font-size:11px;color:var(--t3);line-height:1.5;font-style:italic;">Toutes les portées indiquées s'entendent dans le respect des préférences de notification de chaque professionnel de santé et selon les règles d'éditorialisation de la plateforme, conçues pour préserver la qualité d'expérience PS et l'engagement durable.</p>
+
+    <div class="compare-cta-row">
+      <button class="compare-cta-btn" onclick="showView('view-business')">
+        <div class="compare-cta-btn-label">Détail</div>
+        <div class="compare-cta-btn-name">Business</div>
+        <div class="compare-cta-btn-arrow">Voir la fiche complète →</div>
       </button>
-      <div class="faq-a" id="faq-a-1" style="padding:0 22px 20px;font-size:14px;line-height:1.65;color:#52525b;">Tous les fournisseurs du secteur santé : éditeurs et SaaS santé, startups e-santé, fabricants et distributeurs de dispositifs médicaux, laboratoires et pharma, organismes de DPC et de formation, assureurs RC Pro. Le programme est limité à 60 partenaires fondateurs.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden;">
-      <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-2" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;">
-        <span style="font-size:15.5px;font-weight:600;color:#18181b;">Comment les professionnels de santé sont-ils recrutés ?</span>
-        <span class="faq-chev" style="flex-shrink:0;color:#0284c7;transition:transform .2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </span>
+      <button class="compare-cta-btn premium" onclick="showView('view-premium')">
+        <div class="compare-cta-btn-label">Détail · Cœur de cible</div>
+        <div class="compare-cta-btn-name">Premium</div>
+        <div class="compare-cta-btn-arrow">Voir la fiche complète →</div>
       </button>
-      <div class="faq-a" id="faq-a-2" style="padding:0 22px 20px;font-size:14px;line-height:1.65;color:#52525b;" hidden>1,5 million de comptes PS sont pré-créés à partir des annuaires officiels (RPPS, ADELI). L'acquisition se concentre sur les prescripteurs institutionnels — sociétés savantes, CPTS, URPS, institutionnels (HAS, ANSM, Ordres), universités et organismes de formation continue — qui recommandent la plateforme à leurs adhérents.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden;">
-      <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-3" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;">
-        <span style="font-size:15.5px;font-weight:600;color:#18181b;">Quelle différence entre le tarif Primo-Partenaire et le tarif plein ?</span>
-        <span class="faq-chev" style="flex-shrink:0;color:#0284c7;transition:transform .2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </span>
+      <button class="compare-cta-btn" onclick="showView('view-enterprise')">
+        <div class="compare-cta-btn-label">Détail</div>
+        <div class="compare-cta-btn-name">Enterprise</div>
+        <div class="compare-cta-btn-arrow">Voir la fiche complète →</div>
       </button>
-      <div class="faq-a" id="faq-a-3" style="padding:0 22px 20px;font-size:14px;line-height:1.65;color:#52525b;" hidden>Le tarif Primo-Partenaire est gelé à vie à environ 70 % du plein public : 600 €/mois pour Business (au lieu de 1 000 €), 1 500 €/mois pour Premium (au lieu de 2 500 €), et −30 à −40 % négocié pour Enterprise. Vous ne basculez jamais au tarif standard des entrants post-lancement.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden;">
-      <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-4" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;">
-        <span style="font-size:15.5px;font-weight:600;color:#18181b;">Puis-je résilier si la plateforme ne me convient pas ?</span>
-        <span class="faq-chev" style="flex-shrink:0;color:#0284c7;transition:transform .2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </span>
-      </button>
-      <div class="faq-a" id="faq-a-4" style="padding:0 22px 20px;font-size:14px;line-height:1.65;color:#52525b;" hidden>Oui. La résiliation est libre au 31 décembre 2026, sans frais ni pénalité, à votre seule initiative. Vous testez la plateforme pendant la gratuité d'amorçage avant tout engagement ferme.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden;">
-      <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-5" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;">
-        <span style="font-size:15.5px;font-weight:600;color:#18181b;">La plateforme est-elle conforme pour les communications santé ?</span>
-        <span class="faq-chev" style="flex-shrink:0;color:#0284c7;transition:transform .2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </span>
-      </button>
-      <div class="faq-a" id="faq-a-5" style="padding:0 22px 20px;font-size:14px;line-height:1.65;color:#52525b;" hidden>Oui. Medical Place est conçue dès l'origine pour respecter les exigences réglementaires du secteur : authentification RPPS de tous les PS, traçabilité des interactions, conformité RGPD santé. Un cadre légal lisible par votre direction juridique.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e2e8f0;border-radius:14px;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden;">
-      <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a-6" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;background:none;border:none;cursor:pointer;text-align:left;font-family:inherit;">
-        <span style="font-size:15.5px;font-weight:600;color:#18181b;">Comment mesurer le retour sur investissement ?</span>
-        <span class="faq-chev" style="flex-shrink:0;color:#0284c7;transition:transform .2s;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </span>
-      </button>
-      <div class="faq-a" id="faq-a-6" style="padding:0 22px 20px;font-size:14px;line-height:1.65;color:#52525b;" hidden>Un reporting en temps réel suit l'audience touchée, l'engagement par segment et les conversions de chaque action. Un reporting trimestriel personnalisé détaille les KPI métier : PS atteints par spécialité, taux d'engagement et contributions à votre pipeline.</div>
     </div>
   </div>
-</section>
 
-<!-- ===== FINAL CTA ===== -->
-<section class="sec" style="max-width:1120px;margin:0 auto;padding:72px 24px 80px;">
-  <div class="cta-box" style="background:linear-gradient(135deg,#0f172a,#0284c7);border-radius:28px;padding:56px 40px;text-align:center;overflow:hidden;position:relative;">
-    <h2 class="cta-h2" style="font-size:36px;font-weight:700;letter-spacing:-.025em;color:#fff;margin:0 auto;max-width:660px;line-height:1.12;text-wrap:balance;">Co-construisez l'écosystème avant le lancement public</h2>
-    <p style="font-size:17px;line-height:1.6;color:rgba(255,255,255,.82);margin:16px auto 0;max-width:560px;">60 places de partenaires fondateurs, ni plus, ni moins. Réservez un rendez-vous de cadrage de 45 minutes pour définir votre palier et vos cibles RPPS.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:32px;">
-      <a class="cta-white" href="mailto:partenaires@medical-place.com?subject=Rendez-vous%20de%20cadrage%20%E2%80%93%20Programme%20Primo-Partenaires" style="display:inline-flex;align-items:center;gap:8px;height:54px;padding:0 28px;border-radius:12px;background:#fff;color:#0f172a;font-size:15px;font-weight:600;box-shadow:0 10px 28px rgba(0,0,0,.24);">
-        Prendre rendez-vous
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a class="cta-glass" href="mailto:partenaires@medical-place.com" style="display:inline-flex;align-items:center;gap:8px;height:54px;padding:0 26px;border-radius:12px;background:rgba(255,255,255,.10);color:#fff;font-size:15px;font-weight:600;border:1px solid rgba(255,255,255,.28);">
-        partenaires@medical-place.com
-      </a>
+  <div class="foot">
+    <div><strong>Crown Digital</strong> · Medical Place · Comparaison des paliers Communauté</div>
+    <div>Communautés Sponsor</div>
+  </div>
+</div>
+
+
+<!-- ================================================================ -->
+<!-- =================== FICHE BUSINESS ============================== -->
+<!-- ================================================================ -->
+<div class="view" id="view-business">
+  <div class="detail-head">
+    <button class="back-btn" onclick="showView('view-main')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Retour à la vue d'ensemble
+    </button>
+    <button class="compare-link" onclick="showView('view-compare')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18M8 3v18M16 3v18"/></svg>
+      Comparer les 3 offres
+    </button>
+  </div>
+
+  <div class="detail-hero b">
+    <div class="detail-eyebrow b">Communautés Sponsor</div>
+    <div class="detail-title">Business</div>
+    <div class="detail-tagline">Une communauté de marque autonome avec ciblage RPPS avancé, sous-communautés segmentées et capacité d'animation éditoriale ciblée. Pour les éditeurs SaaS établis et les ETI medtech qui veulent une présence éditoriale structurée.</div>
+
+    <div class="detail-pricing">
+      <div class="detail-price-block">
+        <div class="dpb-label">Tarif plein public</div>
+        <div class="dpb-price">1 000 €<small>/mois</small></div>
+        <div class="dpb-sub">12 000 €/an</div>
+      </div>
+      <div class="detail-price-block highlight">
+        <div class="dpb-label">Tarif Primo-Partenaire 2027</div>
+        <div class="dpb-price">600 €<small>/mois</small></div>
+        <div class="dpb-sub">7 200 €/an · −40 % pendant 12 mois</div>
+      </div>
+      <div class="detail-price-block highlight2">
+        <div class="dpb-label">Tarif gelé à vie 2028+</div>
+        <div class="dpb-price">700 €<small>/mois</small></div>
+        <div class="dpb-sub">8 400 €/an · −30 % perpétuel</div>
+      </div>
     </div>
   </div>
-</section>
 
-<!-- ===== FOOTER ===== -->
-<footer style="border-top:1px solid #e2e8f0;background:rgba(255,255,255,.6);">
-  <div style="max-width:1120px;margin:0 auto;padding:28px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:16px;">
-    <span style="display:inline-flex;align-items:center;gap:7px;color:#0EA5E9;">
-      <svg width="26" height="21" viewBox="0 0 40 32" fill="none" aria-hidden="true"><path d="M5 28 V14 C5 9.5 8 6.5 12 6.5 C16 6.5 19 9.5 19 14 V28 M19 14 C19 9.5 22 6.5 26 6.5 C30 6.5 33 9.5 33 14 V28" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="3.2" r="1.9" fill="currentColor"/><circle cx="26" cy="29.5" r="1.9" fill="currentColor"/></svg>
-      <span style="font-size:15px;font-weight:700;letter-spacing:-.015em;color:#0f172a;white-space:nowrap;">Medical Place</span>
-    </span>
-    <div style="flex:1;"></div>
-    <span style="font-size:12.5px;color:#71717a;">© 2026 Medical Place · Programme Primo-Partenaires · Le réseau social des professionnels de santé</span>
+  <div class="detail-body">
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01M15 9h.01M9 15c.5 1 1.5 2 3 2s2.5-1 3-2"/></svg>
+        Ce que vous obtenez
+      </div>
+      <ul class="feat-list">
+        <li><strong>Communauté autonome animée à votre nom</strong> avec design personnalisé</li>
+        <li><strong>Ciblage RPPS avancé illimité</strong> : combinaisons profession × savoir-faire × type d'établissement × territoire</li>
+        <li><strong>5 sous-communautés thématiques</strong> que vous structurez selon vos cibles</li>
+        <li><strong>25 invitations PS/mois</strong> pour recruter directement des professionnels de santé dans votre communauté</li>
+        <li><strong>10 annonces d'événements/an incluses</strong> avec diffusion auprès des membres de votre communauté + récapitulatif national public</li>
+        <li><strong>Posts sponsorisés</strong> : diffusion auprès des membres de votre communauté</li>
+        <li>3 administrateurs</li>
+        <li><strong>CTA externe personnalisable</strong> sur votre page communauté (lien vers démo, site, formulaire)</li>
+        <li>Setup d'onboarding offert pour les Primo-Partenaires signés en été 2026 (valeur 1 500 €)</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+        Diffusion d'une annonce d'événement
+      </div>
+      <p>Quand vous publiez dans votre quota inclus (10/an), votre événement est diffusé sur 6 points de contact, dont 5 auprès des <strong>membres de votre communauté</strong> et 1 visible par toute la cible RPPS via consultation :</p>
+      <ul class="feat-list">
+        <li>Page d'accueil de votre communauté (pinné comme événement actif)</li>
+        <li>Groupe de discussion de votre communauté</li>
+        <li>Fil d'actualité de vos membres abonnés à la communauté</li>
+        <li>Agenda en première page des PS abonnés à votre communauté</li>
+        <li><strong>Récapitulatif national des événements à venir</strong> (consultable par toute la cible RPPS, y compris non-membres)</li>
+        <li>Notifications email et push aux membres selon leurs préférences</li>
+      </ul>
+      <div class="inset" style="margin-top:10px;">
+        <div class="inset-body"><strong>Au-delà du quota inclus</strong> : <strong>100&nbsp;€/annonce supplémentaire (75&nbsp;€ en Primo-Partenaire)</strong>, diffusion sur le même périmètre (membres de votre communauté). Pour étendre la portée au <strong>réseau professionnel de vos membres</strong>, passez au palier Premium (30 annonces/an) ou Enterprise (annonces illimitées). Pour toucher <strong>toute votre cible RPPS</strong> — y compris les non-membres — les encarts display Medical Place assurent une diffusion non intrusive et sans plafond (voir fiche Services additionnels).</div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-3 3-3-3"/></svg>
+        Pour qui ?
+      </div>
+      <p>Le palier <strong>Business</strong> s'adresse aux éditeurs SaaS santé établis, aux organismes de DPC à plusieurs centaines d'apprenants, aux ETI medtech (fabricants de DM à audience régionale ou nationale), et aux acteurs de l'assurance professionnelle. Une remise <strong>Startup</strong> est possible pour les structures éligibles signant après l'expiration du Primo-Partenaire.</p>
+    </div>
+
+    <div class="detail-section">
+      <div class="example-box">
+        <div class="example-label">Exemple d'usage</div>
+        <div class="example-body">Un éditeur SaaS de téléconsultation signe Primo-Partenaire Business en juillet 2026. Il anime une communauté "Téléconsultation et exercice mixte" avec 4 sous-communautés (MG, sages-femmes, pédiatres, psychiatres). Il publie 10 annonces d'événements/an (webinaires externes, formations, congrès) qui atteignent les membres de sa communauté, et bénéficie du démarrage anticipé pendant l'été. <strong>Coût total sur 3 ans</strong> : 0 € + 7 200 € + 8 400 € + 8 400 € = <strong>24 000 €</strong> au lieu de 37 500 € au tarif plein.</div>
+      </div>
+    </div>
+
+    <div class="nav-related-wrap">
+      <div class="nav-related-title">Naviguer dans le programme</div>
+      <button class="compare-nav-btn" onclick="showView('view-compare')">
+        <div class="compare-nav-btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+        </div>
+        <div class="compare-nav-btn-body">
+          <div class="compare-nav-btn-label">Vue synthétique</div>
+          <div class="compare-nav-btn-title">Comparer les 3 offres côte à côte</div>
+        </div>
+        <div class="compare-nav-btn-arrow">→</div>
+      </button>
+      <div class="nav-related">
+        <button class="nav-card" onclick="showView('view-services')">
+          <div class="nav-card-label">Compléments</div>
+          <div class="nav-card-name">Services additionnels &amp; campagnes</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+        <button class="nav-card" onclick="showView('view-premium')">
+          <div class="nav-card-label">Palier supérieur</div>
+          <div class="nav-card-name">Premium</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+      </div>
+    </div>
   </div>
-</footer>
+
+  <div class="foot">
+    <div><strong>Crown Digital</strong> · Medical Place · Fiche Business</div>
+    <div>Communautés Sponsor</div>
+  </div>
+</div>
+
+
+<!-- ================================================================ -->
+<!-- =================== FICHE PREMIUM =============================== -->
+<!-- ================================================================ -->
+<div class="view" id="view-premium">
+  <div class="detail-head">
+    <button class="back-btn" onclick="showView('view-main')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Retour à la vue d'ensemble
+    </button>
+    <button class="compare-link" onclick="showView('view-compare')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18M8 3v18M16 3v18"/></svg>
+      Comparer les 3 offres
+    </button>
+  </div>
+
+  <div class="detail-hero b">
+    <div class="detail-eyebrow b">Communautés Sponsor · Cœur de cible</div>
+    <div class="detail-title">Premium</div>
+    <div class="detail-tagline">La présence éditoriale ciblée la plus complète. Pour les industriels du dispositif médical, les organismes de formation continue d'envergure nationale et les acteurs de l'assurance professionnelle qui veulent une couverture multi-segments avec accompagnement dédié.</div>
+
+    <div class="detail-pricing">
+      <div class="detail-price-block">
+        <div class="dpb-label">Tarif plein public</div>
+        <div class="dpb-price">2 500 €<small>/mois</small></div>
+        <div class="dpb-sub">30 000 €/an</div>
+      </div>
+      <div class="detail-price-block highlight">
+        <div class="dpb-label">Tarif Primo-Partenaire 2027</div>
+        <div class="dpb-price">1 500 €<small>/mois</small></div>
+        <div class="dpb-sub">18 000 €/an · −40 % pendant 12 mois</div>
+      </div>
+      <div class="detail-price-block highlight2">
+        <div class="dpb-label">Tarif gelé à vie 2028+</div>
+        <div class="dpb-price">1 750 €<small>/mois</small></div>
+        <div class="dpb-sub">21 000 €/an · −30 % perpétuel</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01M15 9h.01M9 15c.5 1 1.5 2 3 2s2.5-1 3-2"/></svg>
+        Ce que vous obtenez
+      </div>
+      <ul class="feat-list">
+        <li><strong>Tout le contenu du palier Business</strong> (communauté autonome, ciblage RPPS illimité, sous-communautés, CTA externe, groupe de discussion)</li>
+        <li><strong>Édition ciblée des posts par segment</strong> : publiez un message différencié à chaque sous-communauté ou catégorie de PS sans noyer le reste de votre audience. <strong>Exclusif Premium et Enterprise.</strong></li>
+        <li><strong>15 sous-communautés thématiques</strong> au lieu de 5 — couvrez l'ensemble de vos cibles segmentées par spécialité</li>
+        <li><strong>100 invitations PS/mois</strong> pour recruter directement des professionnels de santé dans vos communautés (50 max par communauté)</li>
+        <li><strong>30 annonces d'événements/an incluses</strong> avec diffusion par <strong>cooptation professionnelle</strong> : membres de votre communauté + leurs contacts directs (effet réseau étendu)</li>
+        <li><strong>Posts sponsorisés à portée étendue</strong> : diffusion auprès des membres de votre communauté et de leurs contacts directs de même profession (effet de cooptation professionnelle)</li>
+        <li><strong>Customer Success Manager dédié</strong> : un interlocuteur unique chez Medical Place pour le suivi opérationnel</li>
+        <li><strong>Rapport trimestriel d'audience et d'engagement</strong> personnalisé</li>
+        <li>Setup d'onboarding offert pour les Primo-Partenaires signés en été 2026 (valeur 2 500 €)</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+        Diffusion d'une annonce d'événement
+      </div>
+      <p>En Premium, vos <strong>30 annonces d'événements/an</strong> sont diffusées en <strong>cercles concentriques par cooptation professionnelle</strong> : auprès des membres de votre communauté, puis auprès de leurs <strong>contacts directs</strong>. Cette mécanique exploite la confiance entre pairs, particulièrement puissante dans le milieu médical où la recommandation entre PS est le canal le plus crédible.</p>
+      <ul class="feat-list">
+        <li>Page d'accueil de votre communauté (pinné comme événement actif)</li>
+        <li>Groupe de discussion de votre communauté</li>
+        <li>Fil d'actualité de vos membres abonnés à la communauté</li>
+        <li><strong>Fil d'actualité des contacts directs de vos membres</strong> (cercle de cooptation professionnelle)</li>
+        <li>Agenda en première page des PS abonnés à votre communauté</li>
+        <li><strong>Récapitulatif national des événements à venir</strong> (consultable par toute la cible RPPS, y compris non-membres)</li>
+        <li>Notifications email et push aux membres selon leurs préférences</li>
+      </ul>
+      <div class="inset" style="margin-top:10px;">
+        <div class="inset-body"><strong>Au-delà du quota inclus</strong> : <strong>200&nbsp;€/annonce supplémentaire (150&nbsp;€ en Primo-Partenaire)</strong>, diffusion selon la même mécanique de cooptation. Pour bénéficier d'un <strong>volume illimité d'annonces</strong>, passez au palier Enterprise. Pour toucher <strong>toute votre cible RPPS</strong> sans passer par le feed, les encarts display Medical Place assurent une diffusion non intrusive et sans plafond (voir fiche Services additionnels).</div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-3 3-3-3"/></svg>
+        Pour qui ?
+      </div>
+      <p>Le palier <strong>Premium</strong> est notre cœur de cible. Il s'adresse aux industriels du dispositif médical (équipementiers, fabricants de DM, dispositifs DIV), aux organismes de DPC à audience nationale, aux acteurs de l'assurance professionnelle (RCP, prévoyance), et plus largement à toute ETI ou grand acteur qui veut une présence éditoriale structurée et accompagnée.</p>
+    </div>
+
+    <div class="detail-section">
+      <div class="example-box">
+        <div class="example-label">Exemple d'usage</div>
+        <div class="example-body">Un industriel d'échographes signe Primo-Partenaire Premium en juillet 2026. Il anime une communauté principale "Imagerie médicale" avec 8 sous-communautés (radiologues, sages-femmes échographistes, MG pratiquant l'écho, cardiologues, urologues, gynécologues, vétérinaires médicaux, anesthésistes). Grâce à l'<strong>édition ciblée par segment</strong>, il publie un message différencié à chaque sous-communauté : démo produit pour les radiologues, témoignages utilisateurs pour les sages-femmes, étude clinique pour les cardiologues. Il publie 30 annonces d'événements par an avec <strong>diffusion par cooptation professionnelle</strong> (membres + leurs contacts directs), et bénéficie de son CSM dédié. <strong>Coût total sur 3 ans</strong> : 0 € + 18 000 € + 21 000 € + 21 000 € = <strong>60 000 €</strong> en abonnement, au lieu de 92 500 € au tarif plein.</div>
+      </div>
+    </div>
+
+    <div class="nav-related-wrap">
+      <div class="nav-related-title">Naviguer dans le programme</div>
+      <button class="compare-nav-btn" onclick="showView('view-compare')">
+        <div class="compare-nav-btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+        </div>
+        <div class="compare-nav-btn-body">
+          <div class="compare-nav-btn-label">Vue synthétique</div>
+          <div class="compare-nav-btn-title">Comparer les 3 offres côte à côte</div>
+        </div>
+        <div class="compare-nav-btn-arrow">→</div>
+      </button>
+      <div class="nav-related">
+        <button class="nav-card" onclick="showView('view-business')">
+          <div class="nav-card-label">Palier inférieur</div>
+          <div class="nav-card-name">Business</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+        <button class="nav-card" onclick="showView('view-enterprise')">
+          <div class="nav-card-label">Palier supérieur</div>
+          <div class="nav-card-name">Enterprise</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div><strong>Crown Digital</strong> · Medical Place · Fiche Premium</div>
+    <div>Communautés Sponsor</div>
+  </div>
+</div>
+
+
+<!-- ================================================================ -->
+<!-- =================== FICHE ENTERPRISE ============================ -->
+<!-- ================================================================ -->
+<div class="view" id="view-enterprise">
+  <div class="detail-head">
+    <button class="back-btn" onclick="showView('view-main')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Retour à la vue d'ensemble
+    </button>
+    <button class="compare-link" onclick="showView('view-compare')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18M8 3v18M16 3v18"/></svg>
+      Comparer les 3 offres
+    </button>
+  </div>
+
+  <div class="detail-hero b">
+    <div class="detail-eyebrow b">Communautés Sponsor</div>
+    <div class="detail-title">Enterprise</div>
+    <div class="detail-tagline">L'offre sur mesure pour les grands groupes medtech multi-marques, multi-catégories ou multi-pays. Intégrations CRM, accompagnement Key Account, co-branding national.</div>
+
+    <div class="detail-pricing">
+      <div class="detail-price-block">
+        <div class="dpb-label">Tarif plein public</div>
+        <div class="dpb-price">Sur devis</div>
+        <div class="dpb-sub">≥ 60 000 €/an</div>
+      </div>
+      <div class="detail-price-block highlight">
+        <div class="dpb-label">Tarif Primo-Partenaire 2027</div>
+        <div class="dpb-price">−40 %</div>
+        <div class="dpb-sub">négocié sur devis</div>
+      </div>
+      <div class="detail-price-block highlight2">
+        <div class="dpb-label">Tarif gelé à vie 2028+</div>
+        <div class="dpb-price">−30 %</div>
+        <div class="dpb-sub">perpétuel tant que le contrat est renouvelé</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-body">
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01M15 9h.01M9 15c.5 1 1.5 2 3 2s2.5-1 3-2"/></svg>
+        Ce que vous obtenez
+      </div>
+      <ul class="feat-list">
+        <li><strong>Tout le contenu du palier Premium</strong> et au-delà</li>
+        <li><strong>Sous-communautés illimitées</strong> : structurez librement votre présence multi-marques ou multi-catégories</li>
+        <li><strong>Administrateurs illimités</strong> : accès simultané pour vos équipes marketing, communication et compliance</li>
+        <li><strong>250 invitations PS/mois</strong> pour recruter directement des professionnels de santé dans vos communautés (sans plafond par communauté)</li>
+        <li><strong>Annonces d'événements illimitées</strong></li>
+        <li><strong>API et intégration CRM</strong> (Veeva, Salesforce, HubSpot) pour la synchronisation avec votre système d'information</li>
+        <li><strong>Application mobile de prise de lead en congrès</strong> : vos équipes terrain scannent les PS visiteurs de votre stand depuis une app dédiée, avec <strong>qualification RPPS immédiate</strong> (profession, spécialité, lieu d'exercice), prise de notes contextuelles, et <strong>synchronisation CRM automatique</strong>. Reporting en temps réel par congrès et par équipier. Transformez vos présences en congrès en pipeline mesurable.</li>
+        <li><strong>Key Account Manager dédié</strong> avec point hebdomadaire et reporting sur-mesure</li>
+        <li><strong>Co-branding sur les événements nationaux</strong> Medical Place</li>
+        <li><strong>Onboarding sur-mesure</strong> avec accompagnement de vos équipes (offert pour les Primo-Partenaires signés en été 2026, valeur 3 500 €)</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+        Diffusion d'une annonce d'événement
+      </div>
+      <p>En Enterprise, vos annonces d'événements bénéficient de la <strong>même diffusion par cooptation professionnelle</strong> que Premium (membres + leurs contacts directs), mais en <strong>volume totalement illimité</strong>. C'est le palier des grands acteurs qui multiplient les webinaires, formations et événements terrain à un rythme soutenu tout au long de l'année, sans se soucier de plafond annuel.</p>
+      <ul class="feat-list">
+        <li>Page d'accueil de votre communauté (pinné comme événement actif)</li>
+        <li>Groupe de discussion de votre communauté</li>
+        <li>Fil d'actualité de vos membres abonnés à la communauté</li>
+        <li><strong>Fil d'actualité des contacts directs de vos membres</strong> (cercle de cooptation professionnelle)</li>
+        <li>Agenda en première page des PS abonnés à votre communauté</li>
+        <li><strong>Récapitulatif national des événements à venir</strong> (consultable par toute la cible RPPS, y compris non-membres)</li>
+        <li>Notifications email et push aux membres selon leurs préférences</li>
+      </ul>
+      <div class="inset teal" style="margin-top:10px;">
+        <div class="inset-body">Pour toucher <strong>toute votre cible RPPS sélectionnée</strong> — y compris les non-membres et hors réseau professionnel des membres — utilisez les <strong>encarts display Medical Place</strong> (voir fiche Services additionnels). Non intrusifs, sans plafond de saturation, et éligibles au Programme Amplification (jusqu'à −80 % sur les campagnes).</div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 11-3 3-3-3"/></svg>
+        Pour qui ?
+      </div>
+      <p>Le palier <strong>Enterprise</strong> s'adresse aux grands groupes medtech ou e-santé qui opèrent plusieurs marques, plusieurs catégories produit, ou plusieurs pays. Typiquement : un groupe d'équipement médical multi-divisions, un fabricant de dispositifs DIV multi-spécialités, un acteur de l'assurance professionnelle couvrant l'ensemble des PS, un éditeur SaaS santé pan-européen.</p>
+    </div>
+
+    <div class="detail-section">
+      <div class="example-box">
+        <div class="example-label">Exemple d'usage</div>
+        <div class="example-body">Un groupe d'équipement médical multi-divisions (échographie, ECG, électrophysiologie, ventilation, monitoring) signe Primo-Partenaire Enterprise en juillet 2026. Il structure 4 communautés autonomes (une par division) avec 30+ sous-communautés au total. Il intègre Medical Place à son Veeva pour la synchronisation des contacts PS. Sur ses 12 congrès annuels (JFR, ESC, SFAR, etc.), ses équipes terrain utilisent l'<strong>application mobile de prise de lead</strong> pour qualifier instantanément chaque PS visiteur via RPPS et alimenter directement le CRM. Son KAM organise un COPIL trimestriel. L'investissement annuel négocié est de l'ordre de <strong>80 à 120 000 €/an</strong> selon le périmètre, avec −40 % en année Primo-Partenaire et −30 % à vie.</div>
+      </div>
+    </div>
+
+    <div class="nav-related-wrap">
+      <div class="nav-related-title">Naviguer dans le programme</div>
+      <button class="compare-nav-btn" onclick="showView('view-compare')">
+        <div class="compare-nav-btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+        </div>
+        <div class="compare-nav-btn-body">
+          <div class="compare-nav-btn-label">Vue synthétique</div>
+          <div class="compare-nav-btn-title">Comparer les 3 offres côte à côte</div>
+        </div>
+        <div class="compare-nav-btn-arrow">→</div>
+      </button>
+      <div class="nav-related">
+        <button class="nav-card" onclick="showView('view-premium')">
+          <div class="nav-card-label">Palier inférieur</div>
+          <div class="nav-card-name">Premium</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+        <button class="nav-card" onclick="showView('view-services')">
+          <div class="nav-card-label">Compléments</div>
+          <div class="nav-card-name">Services additionnels &amp; campagnes</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div><strong>Crown Digital</strong> · Medical Place · Fiche Enterprise</div>
+    <div>Communautés Sponsor</div>
+  </div>
+</div>
+
+
+<!-- ================================================================ -->
+<!-- =================== FICHE SERVICES (Famille C) ================== -->
+<!-- ================================================================ -->
+<div class="view" id="view-services">
+  <div class="detail-head">
+    <button class="back-btn" onclick="showView('view-main')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      Retour à la vue d'ensemble
+    </button>
+    <button class="compare-link" onclick="showView('view-compare')">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18M8 3v18M16 3v18"/></svg>
+      Comparer les 3 offres
+    </button>
+  </div>
+
+  <div class="detail-hero c">
+    <div class="detail-eyebrow c">Services additionnels</div>
+    <div class="detail-title">Services additionnels &amp; campagnes</div>
+    <div class="detail-tagline">Les services complémentaires à votre abonnement Communauté Sponsor : setup d'onboarding, annonces d'événements, packs add-ons annuels, campagnes sponsorisées par taille de cible. Tarifs Primo-Partenaire décotés sur l'ensemble.</div>
+  </div>
+
+  <div class="detail-body">
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 12 3l9 9-9 9z"/><circle cx="12" cy="12" r="3"/></svg>
+        Setup &amp; onboarding (one-shot à la signature)
+      </div>
+      <ul class="feat-list">
+        <li>Setup Business : <strong>1 500 €</strong> · <strong style="color:var(--teal);">offert pour les Primo-Partenaires d'été</strong></li>
+        <li>Setup Premium : <strong>2 500 €</strong> · <strong style="color:var(--teal);">offert pour les Primo-Partenaires d'été</strong></li>
+        <li>Setup Enterprise : <strong>3 500 €</strong> · <strong style="color:var(--teal);">offert pour les Primo-Partenaires d'été</strong></li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+        Annonces d'événements (incluses dans les forfaits Communautés)
+      </div>
+      <p>Le quota inclus permet d'annoncer vos événements (webinaire externe, atelier, réunion, formation, congrès, salon) avec une <strong>diffusion calibrée selon votre palier d'abonnement</strong>.</p>
+      <ul class="feat-list">
+        <li><strong>Business : 10 annonces/an incluses</strong> · diffusion auprès des membres de votre communauté (+ récapitulatif national public)</li>
+        <li><strong>Premium : 30 annonces/an incluses</strong> · diffusion par <strong>cooptation professionnelle</strong> : membres + leurs contacts directs</li>
+        <li><strong>Enterprise : annonces illimitées</strong> · diffusion par <strong>cooptation professionnelle</strong> : membres + leurs contacts directs</li>
+        <li>Au-delà du quota Business : <strong>100&nbsp;€/annonce supplémentaire</strong> (75&nbsp;€ en tarif Primo-Partenaire), diffusion auprès de vos membres</li>
+        <li>Au-delà du quota Premium : <strong>200&nbsp;€/annonce supplémentaire</strong> (150&nbsp;€ en tarif Primo-Partenaire), diffusion par cooptation professionnelle</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+        Packs add-ons annuels
+      </div>
+      <ul class="feat-list">
+        <li>+5 sous-communautés supplémentaires : <strong>3 500 €/an</strong> · 2 450 € en Primo-Partenaire (−30 %)</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <div class="detail-section-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 20h10M12 18v2"/></svg>
+        Encarts display Medical Place
+      </div>
+      <p><strong>Encarts publicitaires verticaux</strong> positionnés en colonne latérale droite des pages profil PS, annuaire et communautés. Contrairement aux posts dans le feed, les encarts display sont <strong>non intrusifs, non notifiés</strong>, et n'entrent pas dans le calcul des préférences PS. Vous pouvez donc cibler <strong>toute cible RPPS</strong>, y compris les non-membres, sans risque de saturation.</p>
+
+      <div class="inset teal" style="margin-top:12px;margin-bottom:16px;">
+        <div class="inset-title">Trois modèles selon la taille de votre cible</div>
+        <div class="inset-body">Nous ajustons notre modèle tarifaire à la <strong>démographie réelle de votre cible RPPS</strong>. Sur une niche ultra-spécialisée, un CPM classique n'a pas de sens (le volume théorique dépasse la population réelle). Nous vendons donc trois modèles cohérents avec la réalité du marché : <strong>présence temporelle</strong> pour les niches, <strong>reach garanti</strong> pour les cibles intermédiaires, <strong>CPM classique</strong> pour les cibles massives.</div>
+      </div>
+
+      <h4 style="margin-top:18px;">Modèle A — Présence temporelle · cibles &lt; 10 000 PS</h4>
+      <p style="font-size:12.5px;">Sur ces cibles, vous achetez une <strong>fenêtre de présence exclusive</strong> avec reach garanti (70 à 85 % de la cible atteinte, 4 à 5 expositions minimum par PS).</p>
+      <div style="overflow-x:auto;margin:10px 0;">
+        <table style="width:100%;min-width:520px;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="background:var(--search-bg);">
+              <th style="padding:8px 10px;text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">Cible</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">7 jours</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">14 jours</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);background:rgba(13,148,136,.06);">30 jours</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">60 jours</th>
+            </tr>
+          </thead>
+          <tbody style="font-variant-numeric:tabular-nums;">
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 1 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">1&nbsp;350&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;015&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">2&nbsp;475&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;855&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);background:rgba(13,148,136,.04);"><strong>4&nbsp;500&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">3&nbsp;375&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">7&nbsp;875&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">5&nbsp;905&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 2 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">1&nbsp;170&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">880&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">2&nbsp;145&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;610&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);background:rgba(13,148,136,.04);"><strong>3&nbsp;900&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">2&nbsp;925&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">6&nbsp;825&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">5&nbsp;120&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 5 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">960&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">720&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">1&nbsp;760&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;320&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);background:rgba(13,148,136,.04);"><strong>3&nbsp;200&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">2&nbsp;400&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">5&nbsp;600&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">4&nbsp;200&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);">&lt; 10 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;">780&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">585&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;">1&nbsp;430&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;070&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;background:rgba(13,148,136,.04);"><strong>2&nbsp;600&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;950&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;">4&nbsp;550&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">3&nbsp;415&nbsp;€ PP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:11.5px;color:var(--t3);font-style:italic;margin-top:4px;">Exemples de cibles : &lt; 1 000 = anatomopathologistes ; &lt; 2 000 = néphrologues ; &lt; 5 000 = dermatologues ; &lt; 10 000 = cardiologues.</p>
+
+      <h4 style="margin-top:22px;">Modèle B — Reach garanti · cibles 10 000 à 125 000 PS</h4>
+      <p style="font-size:12.5px;">Reach garanti 55 à 65 % de la cible atteinte, 3 à 4 expositions minimum par PS sur la période.</p>
+      <div style="overflow-x:auto;margin:10px 0;">
+        <table style="width:100%;min-width:520px;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="background:var(--search-bg);">
+              <th style="padding:8px 10px;text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">Cible</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">7 jours</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">14 jours</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);background:rgba(13,148,136,.06);">30 jours</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">60 jours</th>
+            </tr>
+          </thead>
+          <tbody style="font-variant-numeric:tabular-nums;">
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 20 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">660&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">495&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">1&nbsp;210&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">910&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);background:rgba(13,148,136,.04);"><strong>2&nbsp;200&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;650&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">3&nbsp;850&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">2&nbsp;890&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 50 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">960&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">720&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">1&nbsp;760&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;320&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);background:rgba(13,148,136,.04);"><strong>3&nbsp;200&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">2&nbsp;400&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">5&nbsp;600&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">4&nbsp;200&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);">&lt; 125 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;">1&nbsp;650&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">1&nbsp;240&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;">3&nbsp;025&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">2&nbsp;270&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;background:rgba(13,148,136,.04);"><strong>5&nbsp;500&nbsp;€</strong><br><span style="color:var(--teal);font-size:11px;font-weight:600;">4&nbsp;125&nbsp;€ PP</span></td>
+              <td style="padding:8px 10px;text-align:right;">9&nbsp;625&nbsp;€<br><span style="color:var(--teal);font-size:11px;font-weight:600;">7&nbsp;220&nbsp;€ PP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:11.5px;color:var(--t3);font-style:italic;margin-top:4px;">Exemples de cibles : &lt; 20 000 = pédiatres ; &lt; 50 000 = kinésithérapeutes ; &lt; 125 000 = infirmiers libéraux.</p>
+
+      <h4 style="margin-top:22px;">Modèle C — CPM classique · cibles &gt; 125 000 PS</h4>
+      <p style="font-size:12.5px;">Sur ces volumes, la démographie ne plafonne plus. Modèle CPM standard avec dégressivité selon volume d'impressions. Durées 7/14/30/60 jours possibles sur devis avec ajustement du volume.</p>
+      <div style="overflow-x:auto;margin:10px 0;">
+        <table style="width:100%;min-width:520px;border-collapse:collapse;font-size:12px;">
+          <thead>
+            <tr style="background:var(--search-bg);">
+              <th style="padding:8px 10px;text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">Cible</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">CPM plein</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">CPM Primo-Partenaire</th>
+              <th style="padding:8px 10px;text-align:right;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--t3);border-bottom:1px solid var(--b1);">Pack 30 j recommandé</th>
+            </tr>
+          </thead>
+          <tbody style="font-variant-numeric:tabular-nums;">
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 250 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">55&nbsp;€</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);color:var(--teal);font-weight:700;">41&nbsp;€</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);font-size:11.5px;">100k impr. : 5&nbsp;500&nbsp;€<br><span style="color:var(--teal);font-weight:600;">4&nbsp;125&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);border-bottom:1px dashed var(--b1);">&lt; 500 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);">42&nbsp;€</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);color:var(--teal);font-weight:700;">32&nbsp;€</td>
+              <td style="padding:8px 10px;text-align:right;border-bottom:1px dashed var(--b1);font-size:11.5px;">200k impr. : 8&nbsp;400&nbsp;€<br><span style="color:var(--teal);font-weight:600;">6&nbsp;300&nbsp;€ PP</span></td>
+            </tr>
+            <tr>
+              <td style="padding:8px 10px;font-weight:600;color:var(--t1);">&gt; 500 000 PS</td>
+              <td style="padding:8px 10px;text-align:right;">32&nbsp;€</td>
+              <td style="padding:8px 10px;text-align:right;color:var(--teal);font-weight:700;">24&nbsp;€</td>
+              <td style="padding:8px 10px;text-align:right;font-size:11.5px;">500k impr. : 16&nbsp;000&nbsp;€<br><span style="color:var(--teal);font-weight:600;">12&nbsp;000&nbsp;€ PP</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:11.5px;color:var(--t3);font-style:italic;margin-top:4px;">Exemples de cibles : &lt; 250 000 = pharmaciens ; &lt; 500 000 = MG + spécialistes ; &gt; 500 000 = tous PS France.</p>
+
+      <div class="inset violet" style="margin-top:20px;">
+        <div class="inset-title">Option Print + Clic</div>
+        <div class="inset-body">Sur tous les modèles, vous pouvez opter pour <strong>Print + Clic</strong> : CPM réduit de <strong>40 %</strong> et facturation additionnelle au clic. Utile pour générer du trafic vers un site externe ou une landing page.<br><br>
+        <strong>CPC standard :</strong> 6,50 € (4,90 € PP) sur cible niche &lt; 10 000 · 4,80 € (3,60 € PP) sur cible intermédiaire · 3,20 € (2,40 € PP) sur cible massive.</div>
+      </div>
+
+      <div class="hero-offer" style="margin-top:22px;">
+        <div class="hero-offer-inner">
+          <span class="hero-offer-tag">Programme Amplification · Réservé aux Primo-Partenaires</span>
+          <div class="hero-offer-title">Débloquez jusqu'à 3 campagnes display à tarif exceptionnel</div>
+          <div class="hero-offer-sub">En complément de la remise Primo-Partenaire standard (−25 % à vie), animez votre communauté pour débloquer des campagnes d'encarts display Medical Place à tarif exceptionnel selon l'audience mobilisée au 15 décembre 2026.</div>
+
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px;">
+            <div style="background:rgba(255,255,255,.35);border:1.5px solid rgba(69,26,3,.15);border-radius:12px;padding:12px 14px;text-align:center;">
+              <div style="font-size:22px;font-weight:800;color:#451a03;letter-spacing:-.02em;">1&nbsp;000</div>
+              <div style="font-size:11px;font-weight:600;color:rgba(69,26,3,.75);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;">abonnés uniques</div>
+              <div style="font-size:13px;font-weight:800;color:#451a03;margin-top:8px;">1 campagne</div>
+            </div>
+            <div style="background:rgba(255,255,255,.35);border:1.5px solid rgba(69,26,3,.15);border-radius:12px;padding:12px 14px;text-align:center;">
+              <div style="font-size:22px;font-weight:800;color:#451a03;letter-spacing:-.02em;">2&nbsp;000</div>
+              <div style="font-size:11px;font-weight:600;color:rgba(69,26,3,.75);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;">abonnés uniques</div>
+              <div style="font-size:13px;font-weight:800;color:#451a03;margin-top:8px;">2 campagnes</div>
+            </div>
+            <div style="background:rgba(255,255,255,.35);border:1.5px solid rgba(69,26,3,.15);border-radius:12px;padding:12px 14px;text-align:center;">
+              <div style="font-size:22px;font-weight:800;color:#451a03;letter-spacing:-.02em;">3&nbsp;000</div>
+              <div style="font-size:11px;font-weight:600;color:rgba(69,26,3,.75);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;">abonnés uniques</div>
+              <div style="font-size:13px;font-weight:800;color:#451a03;margin-top:8px;">3 campagnes</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px;padding:12px 14px;background:rgba(255,255,255,.5);border-radius:10px;">
+            <div style="font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(69,26,3,.75);margin-bottom:6px;">Tarif exceptionnel selon date de signature</div>
+            <div style="font-size:13px;color:#451a03;line-height:1.6;">
+              <strong>−80 % du tarif plein</strong> pour les Primo-Partenaires signés <strong>avant le 21 septembre 2026</strong> (offre d'été) · <strong>−60 % du tarif plein</strong> pour les Primo-Partenaires signés <strong>entre le 22 septembre et le 31 décembre 2026</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inset" style="margin-top:14px;">
+        <div class="inset-title">Modalités du Programme Amplification</div>
+        <div class="inset-body">
+          <strong>Campagnes commencées avant le 31 décembre 2026</strong> (dates de démarrage effectif). Le décompte des abonnés est arrêté au 15 décembre 2026 et compte les <strong>abonnés uniques à la communauté principale du Primo-Partenaire</strong> (les abonnés aux sous-communautés étant nécessairement inscrits à la communauté principale).<br><br>
+          <strong>Une campagne</strong> = un ticket display sur une bande de cible et une durée au choix parmi la grille (7, 14, 30 ou 60 jours), <strong>dans la limite d'un tarif plein de 7 000 € par campagne</strong>. Cela couvre la quasi-totalité des combinaisons (durées &lt; 60 jours sur toutes bandes, campagnes CPM &lt; 125 000 impressions). Les campagnes supérieures à ce plafond restent accessibles au tarif Primo-Partenaire standard (−25 %).<br><br>
+          <strong>Cumul et non-report</strong> : les campagnes débloquées sont cumulables entre elles mais ne sont pas reportables après le 31 décembre 2026. Le tarif Primo-Partenaire standard (−25 %) reprend automatiquement à compter du 1er janvier 2027.
+        </div>
+      </div>
+
+      <p style="margin-top:14px;font-size:12px;color:var(--t3);line-height:1.55;font-style:italic;">Emplacements : colonne latérale droite (format vertical) sur les pages profil PS, annuaire des professionnels de santé et communautés. Rotation calibrée par cible et par emplacement. Grille détaillée par profession et par territoire disponible sur demande. Combinaisons multi-cibles et ciblage territorial possibles avec règles de modulation dédiées.</p>
+    </div>
+
+    <div class="nav-related-wrap">
+      <div class="nav-related-title">Naviguer dans le programme</div>
+      <button class="compare-nav-btn" onclick="showView('view-compare')">
+        <div class="compare-nav-btn-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+        </div>
+        <div class="compare-nav-btn-body">
+          <div class="compare-nav-btn-label">Vue synthétique</div>
+          <div class="compare-nav-btn-title">Comparer les 3 offres côte à côte</div>
+        </div>
+        <div class="compare-nav-btn-arrow">→</div>
+      </button>
+      <div class="nav-related">
+        <button class="nav-card" onclick="showView('view-business')">
+          <div class="nav-card-label">Palier complémentaire</div>
+          <div class="nav-card-name">Business</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+        <button class="nav-card" onclick="showView('view-premium')">
+          <div class="nav-card-label">Palier complémentaire</div>
+          <div class="nav-card-name">Premium</div>
+          <div class="nav-card-arrow">Voir le détail →</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div><strong>Crown Digital</strong> · Medical Place · Fiche Services additionnels</div>
+    <div>Services additionnels &amp; campagnes</div>
+  </div>
+</div>
 
 </div>
 
 <script>
-(function () {
-  var buttons = document.querySelectorAll('.faq-q');
-  buttons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var wasOpen = btn.getAttribute('aria-expanded') === 'true';
-      buttons.forEach(function (b) {
-        b.setAttribute('aria-expanded', 'false');
-        document.getElementById(b.getAttribute('aria-controls')).hidden = true;
-      });
-      if (!wasOpen) {
-        btn.setAttribute('aria-expanded', 'true');
-        document.getElementById(btn.getAttribute('aria-controls')).hidden = false;
-      }
-    });
-  });
-})();
+function showView(viewId) {
+  // Masquer toutes les vues
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  // Afficher la vue cible
+  document.getElementById(viewId).classList.add('active');
+  // Remonter en haut de page
+  window.scrollTo({top: 0, behavior: 'instant'});
+}
 </script>
-
 </body>
 </html>
